@@ -8,20 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234941EBAFF6A00BF855D /* AppDelegate.swift */; };
-		18D234971EBAFF6A00BF855D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234961EBAFF6A00BF855D /* ViewController.swift */; };
-		18D2349A1EBAFF6A00BF855D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D234981EBAFF6A00BF855D /* Main.storyboard */; };
 		18D2349C1EBAFF6A00BF855D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D2349B1EBAFF6A00BF855D /* Assets.xcassets */; };
 		18D2349F1EBAFF6A00BF855D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D2349D1EBAFF6A00BF855D /* LaunchScreen.storyboard */; };
+		18D234A81EBB000E00BF855D /* JWBasicNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234A71EBB000E00BF855D /* JWBasicNaviViewController.swift */; };
+		18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234A91EBB002A00BF855D /* JWBasicTabBarViewController.swift */; };
+		18D234AC1EBB003E00BF855D /* JWBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234AB1EBB003E00BF855D /* JWBasicViewController.swift */; };
+		18D234B01EBB024700BF855D /* JWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234AE1EBB024700BF855D /* JWHomeViewController.swift */; };
+		18D234B11EBB024700BF855D /* JWHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234AF1EBB024700BF855D /* JWHomeViewController.xib */; };
+		18D234B51EBB033B00BF855D /* JWHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234B31EBB033B00BF855D /* JWHomeTableViewCell.swift */; };
+		18D234B61EBB033B00BF855D /* JWHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234B41EBB033B00BF855D /* JWHomeTableViewCell.xib */; };
+		18D234B91EBB0B8900BF855D /* JWHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234B81EBB0B8900BF855D /* JWHomeModel.swift */; };
+		18D234BB1EBB0C4C00BF855D /* JWHomeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234BA1EBB0C4C00BF855D /* JWHomeDetailModel.swift */; };
+		18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234BC1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift */; };
+		18D234BF1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234BD1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib */; };
+		18D234C21EBB136C00BF855D /* JWHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234C01EBB136C00BF855D /* JWHomeDetailViewController.swift */; };
+		18D234C31EBB136C00BF855D /* JWHomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234C11EBB136C00BF855D /* JWHomeDetailViewController.xib */; };
+		18D234C71EBB1C4700BF855D /* JWMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234C51EBB1C4700BF855D /* JWMatchViewController.swift */; };
+		18D234C81EBB1C4700BF855D /* JWMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234C61EBB1C4700BF855D /* JWMatchViewController.xib */; };
+		18D234CC1EBB1C7B00BF855D /* JWMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CA1EBB1C7B00BF855D /* JWMallViewController.swift */; };
+		18D234CD1EBB1C7B00BF855D /* JWMallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234CB1EBB1C7B00BF855D /* JWMallViewController.xib */; };
+		18D234D11EBB1C9600BF855D /* JWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */; };
+		18D234D21EBB1C9600BF855D /* JWMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D01EBB1C9600BF855D /* JWMeViewController.xib */; };
+		18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */; };
+		18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */; };
+		18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18D234911EBAFF6A00BF855D /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D234941EBAFF6A00BF855D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18D234961EBAFF6A00BF855D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18D234991EBAFF6A00BF855D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D2349B1EBAFF6A00BF855D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D2349E1EBAFF6A00BF855D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D234A01EBAFF6A00BF855D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D234A71EBB000E00BF855D /* JWBasicNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWBasicNaviViewController.swift; sourceTree = "<group>"; };
+		18D234A91EBB002A00BF855D /* JWBasicTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWBasicTabBarViewController.swift; sourceTree = "<group>"; };
+		18D234AB1EBB003E00BF855D /* JWBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWBasicViewController.swift; sourceTree = "<group>"; };
+		18D234AE1EBB024700BF855D /* JWHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeViewController.swift; sourceTree = "<group>"; };
+		18D234AF1EBB024700BF855D /* JWHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWHomeViewController.xib; sourceTree = "<group>"; };
+		18D234B31EBB033B00BF855D /* JWHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeTableViewCell.swift; sourceTree = "<group>"; };
+		18D234B41EBB033B00BF855D /* JWHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWHomeTableViewCell.xib; sourceTree = "<group>"; };
+		18D234B81EBB0B8900BF855D /* JWHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeModel.swift; sourceTree = "<group>"; };
+		18D234BA1EBB0C4C00BF855D /* JWHomeDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeDetailModel.swift; sourceTree = "<group>"; };
+		18D234BC1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		18D234BD1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		18D234C01EBB136C00BF855D /* JWHomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeDetailViewController.swift; sourceTree = "<group>"; };
+		18D234C11EBB136C00BF855D /* JWHomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWHomeDetailViewController.xib; sourceTree = "<group>"; };
+		18D234C51EBB1C4700BF855D /* JWMatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMatchViewController.swift; sourceTree = "<group>"; };
+		18D234C61EBB1C4700BF855D /* JWMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWMatchViewController.xib; sourceTree = "<group>"; };
+		18D234CA1EBB1C7B00BF855D /* JWMallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMallViewController.swift; sourceTree = "<group>"; };
+		18D234CB1EBB1C7B00BF855D /* JWMallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWMallViewController.xib; sourceTree = "<group>"; };
+		18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMeViewController.swift; sourceTree = "<group>"; };
+		18D234D01EBB1C9600BF855D /* JWMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWMeViewController.xib; sourceTree = "<group>"; };
+		18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWEntertainmentViewController.swift; sourceTree = "<group>"; };
+		18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWEntertainmentViewController.xib; sourceTree = "<group>"; };
+		18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeDetailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +94,98 @@
 		18D234931EBAFF6A00BF855D /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18D234D31EBB1C9E00BF855D /* Entertainment */,
+				18D234CE1EBB1C7F00BF855D /* Me */,
+				18D234C91EBB1C4F00BF855D /* Mall */,
+				18D234C41EBB1C2E00BF855D /* Match */,
+				18D234AD1EBB01F600BF855D /* Home */,
+				18D234A61EBAFFD300BF855D /* Common */,
 				18D234941EBAFF6A00BF855D /* AppDelegate.swift */,
-				18D234961EBAFF6A00BF855D /* ViewController.swift */,
-				18D234981EBAFF6A00BF855D /* Main.storyboard */,
 				18D2349B1EBAFF6A00BF855D /* Assets.xcassets */,
 				18D2349D1EBAFF6A00BF855D /* LaunchScreen.storyboard */,
 				18D234A01EBAFF6A00BF855D /* Info.plist */,
 			);
 			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
+		18D234A61EBAFFD300BF855D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18D234A71EBB000E00BF855D /* JWBasicNaviViewController.swift */,
+				18D234A91EBB002A00BF855D /* JWBasicTabBarViewController.swift */,
+				18D234AB1EBB003E00BF855D /* JWBasicViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18D234AD1EBB01F600BF855D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18D234B71EBB0B6100BF855D /* Model */,
+				18D234B21EBB031500BF855D /* Cell */,
+				18D234AE1EBB024700BF855D /* JWHomeViewController.swift */,
+				18D234AF1EBB024700BF855D /* JWHomeViewController.xib */,
+				18D234C01EBB136C00BF855D /* JWHomeDetailViewController.swift */,
+				18D234C11EBB136C00BF855D /* JWHomeDetailViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18D234B21EBB031500BF855D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18D234B31EBB033B00BF855D /* JWHomeTableViewCell.swift */,
+				18D234B41EBB033B00BF855D /* JWHomeTableViewCell.xib */,
+				18D234BC1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift */,
+				18D234BD1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18D234B71EBB0B6100BF855D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18D234B81EBB0B8900BF855D /* JWHomeModel.swift */,
+				18D234BA1EBB0C4C00BF855D /* JWHomeDetailModel.swift */,
+				18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D234C41EBB1C2E00BF855D /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				18D234C51EBB1C4700BF855D /* JWMatchViewController.swift */,
+				18D234C61EBB1C4700BF855D /* JWMatchViewController.xib */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		18D234C91EBB1C4F00BF855D /* Mall */ = {
+			isa = PBXGroup;
+			children = (
+				18D234CA1EBB1C7B00BF855D /* JWMallViewController.swift */,
+				18D234CB1EBB1C7B00BF855D /* JWMallViewController.xib */,
+			);
+			path = Mall;
+			sourceTree = "<group>";
+		};
+		18D234CE1EBB1C7F00BF855D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */,
+				18D234D01EBB1C9600BF855D /* JWMeViewController.xib */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		18D234D31EBB1C9E00BF855D /* Entertainment */ = {
+			isa = PBXGroup;
+			children = (
+				18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */,
+				18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */,
+			);
+			path = Entertainment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +214,7 @@
 		18D234891EBAFF6A00BF855D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JW;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = UgoMedia;
@@ -124,8 +249,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D2349F1EBAFF6A00BF855D /* LaunchScreen.storyboard in Resources */,
+				18D234D21EBB1C9600BF855D /* JWMeViewController.xib in Resources */,
+				18D234B61EBB033B00BF855D /* JWHomeTableViewCell.xib in Resources */,
+				18D234B11EBB024700BF855D /* JWHomeViewController.xib in Resources */,
+				18D234C31EBB136C00BF855D /* JWHomeDetailViewController.xib in Resources */,
+				18D234C81EBB1C4700BF855D /* JWMatchViewController.xib in Resources */,
 				18D2349C1EBAFF6A00BF855D /* Assets.xcassets in Resources */,
-				18D2349A1EBAFF6A00BF855D /* Main.storyboard in Resources */,
+				18D234BF1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib in Resources */,
+				18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */,
+				18D234CD1EBB1C7B00BF855D /* JWMallViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +268,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D234971EBAFF6A00BF855D /* ViewController.swift in Sources */,
+				18D234D11EBB1C9600BF855D /* JWMeViewController.swift in Sources */,
+				18D234BB1EBB0C4C00BF855D /* JWHomeDetailModel.swift in Sources */,
+				18D234AC1EBB003E00BF855D /* JWBasicViewController.swift in Sources */,
+				18D234B91EBB0B8900BF855D /* JWHomeModel.swift in Sources */,
+				18D234A81EBB000E00BF855D /* JWBasicNaviViewController.swift in Sources */,
+				18D234C21EBB136C00BF855D /* JWHomeDetailViewController.swift in Sources */,
+				18D234C71EBB1C4700BF855D /* JWMatchViewController.swift in Sources */,
+				18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */,
+				18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */,
 				18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */,
+				18D234B51EBB033B00BF855D /* JWHomeTableViewCell.swift in Sources */,
+				18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */,
+				18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */,
+				18D234B01EBB024700BF855D /* JWHomeViewController.swift in Sources */,
+				18D234CC1EBB1C7B00BF855D /* JWMallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18D234981EBAFF6A00BF855D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18D234991EBAFF6A00BF855D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18D2349D1EBAFF6A00BF855D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
