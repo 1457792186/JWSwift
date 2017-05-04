@@ -24,8 +24,17 @@ class JWBasicNaviViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationBar.tintColor = UIColor.white;
+        self.navigationBar.barTintColor = UIColor.cyan;
+        self.navigationBar.isTranslucent = false;
+        self.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFont(ofSize: 17),NSForegroundColorAttributeName:UIColor.white];
     }
 
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if self.viewControllers.count>0 {
+            viewController.hidesBottomBarWhenPushed = true;
+        }
+        super.pushViewController(viewController, animated: animated);
+    }
     
 }
