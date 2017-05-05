@@ -36,7 +36,7 @@ class JWHomeViewController: JWBasicViewController,UITableViewDelegate,UITableVie
         let titleArr = ["英雄联盟","英雄联盟","英雄联盟","英雄联盟"];
         let anchorArr = ["水晶卡特","赛事专用直播间","Riot、LCS","主播油条"];
         let countArr = ["4535","70000","69000","476000"];
-        let subTitleArr = ["2J杀人如何利用卡特琳娜顺利爬..","LSPL春季赛SNG vs RYL直播中","LCS TSM vs FOX 正在直播","油条：五个隐身英雄套路上分系.."];
+        let subTitleArr = ["2J杀人如何利用卡特琳娜顺利爬","LSPL春季赛SNG vs RYL直播中","LCS TSM vs FOX 正在直播","油条：五个隐身英雄套路上分系"];
         let imgArr = ["home_logo_video0","home_logo_video1","home_logo_video2","home_logo_video3"];
         
         for index in 0..<2{

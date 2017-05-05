@@ -24,10 +24,13 @@ class JWTools: NSObject {
         showView.layer.masksToBounds = true;
         UIApplication.shared.keyWindow?.addSubview(showView);
         
-        let labelFrame:CGRect = NSString.init(string: hudStr).boundingRect(with: CGSize.init(width: 290, height: 9000), options:NSStringDrawingOptions(rawValue: 0), attributes: [NSFontAttributeName:UIFont.systemFont(ofSize: 15)], context: nil);
-        let label:UILabel = UILabel.init(frame: CGRect.init(x: 10, y: 5, width: labelFrame.width, height: labelFrame.height));
+        
+        let labelFont:UIFont = UIFont.systemFont(ofSize: 15)
+        let labelFrame:CGRect = NSString.init(string:hudStr).boundingRect(with: CGSize.init(width: 290, height: 9000), options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:labelFont], context: nil);
+        let label:UILabel = UILabel.init(frame: CGRect.init(x: 10, y: 5, width: ceil(labelFrame.size.width), height: ceil(labelFrame.size.height)));
         label.text = hudStr;
         label.textColor = UIColor.white;
+        label.font = labelFont;
         label.textAlignment = NSTextAlignment.center;
         label.backgroundColor = UIColor.clear;
         showView.addSubview(label);
