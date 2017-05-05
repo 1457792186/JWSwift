@@ -10,7 +10,10 @@ import UIKit
 
 class JWTools: NSObject {
     
-    
+    /*
+     *显示Hud
+     *hudStr:显示的文本
+     */
     class func showHud(hudStr:String){
         if hudStr.isEmpty{
             return;
@@ -43,6 +46,24 @@ class JWTools: NSObject {
         }
     }
     
-    
+    /*
+     *获取Label高度
+     *label:计算的Label
+     *length:限定宽高，0时为Label宽高
+     *isWidth:计算宽/高，true为宽
+     */
+    class func labelFrame(label:UILabel,length:Float,isWidth:Bool) -> CGRect {
+        var lengths:Float = length;
+        if length==0 {
+            lengths = Float(label.frame.size.width);
+        }
+        var size:CGSize = CGSize.init(width: CGFloat(lengths), height: 9000);
+        if !isWidth {
+            lengths = Float(label.frame.size.height);
+            size = CGSize.init(width: 9000, height: CGFloat(lengths));
+        }
+        let labelFrame:CGRect = NSString.init(string:label.text!).boundingRect(with: size, options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:label.font], context: nil);
+        return labelFrame;
+    }
     
 }
