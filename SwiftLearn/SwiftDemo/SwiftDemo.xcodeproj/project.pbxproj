@@ -32,6 +32,7 @@
 		18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */; };
 		18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */; };
 		18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */; };
+		18F122281EBC3D490060FBF5 /* JWTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F122271EBC3D490060FBF5 /* JWTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWEntertainmentViewController.swift; sourceTree = "<group>"; };
 		18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWEntertainmentViewController.xib; sourceTree = "<group>"; };
 		18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeDetailsModel.swift; sourceTree = "<group>"; };
+		18F122271EBC3D490060FBF5 /* JWTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				18D234A71EBB000E00BF855D /* JWBasicNaviViewController.swift */,
 				18D234A91EBB002A00BF855D /* JWBasicTabBarViewController.swift */,
 				18D234AB1EBB003E00BF855D /* JWBasicViewController.swift */,
+				18F122271EBC3D490060FBF5 /* JWTools.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */,
 				18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */,
 				18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */,
+				18F122281EBC3D490060FBF5 /* JWTools.swift in Sources */,
 				18D234B51EBB033B00BF855D /* JWHomeTableViewCell.swift in Sources */,
 				18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */,
 				18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */,
@@ -436,6 +440,7 @@
 				18D234A51EBAFF6A00BF855D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

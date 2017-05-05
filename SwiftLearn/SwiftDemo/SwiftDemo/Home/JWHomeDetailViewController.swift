@@ -38,6 +38,11 @@ class JWHomeDetailViewController: JWBasicViewController,UICollectionViewDataSour
         return detailCell;
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        let model:JWHomeDetailModel = dataModel?.content[indexPath.row] as! JWHomeDetailModel;
+        JWTools.showHud(hudStr: model.title);
+    }
+    
     // MARK: - UICollectionViewFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let width = (UIScreen.main.bounds.size.width - 15)/2;
