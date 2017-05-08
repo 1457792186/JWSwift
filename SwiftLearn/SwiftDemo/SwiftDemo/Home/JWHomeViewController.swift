@@ -69,7 +69,7 @@ class JWHomeViewController: JWBasicViewController,UITableViewDelegate,UITableVie
         self.navigationController?.pushViewController(detailVC, animated:true);
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        return (80*UIScreen.main.bounds.size.width/375.0);
+        return (80 * kScreenWidth / 375.0);
     }
     
     // MARK: - UITableViewDataSource

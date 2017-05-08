@@ -45,8 +45,8 @@ class JWHomeDetailViewController: JWBasicViewController,UICollectionViewDataSour
     
     // MARK: - UICollectionViewFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let width = (UIScreen.main.bounds.size.width - 15)/2;
-        let height = 80 * (UIScreen.main.bounds.size.width - 15) / 360;
+        let width = (kScreenWidth - 15)/2;
+        let height = 80 * (kScreenWidth - 15) / 360;
         
         return CGSize.init(width: width, height: height);
     }
