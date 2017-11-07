@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JWMallViewController: JWBasicViewController {
+class JWTopicViewController: JWBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

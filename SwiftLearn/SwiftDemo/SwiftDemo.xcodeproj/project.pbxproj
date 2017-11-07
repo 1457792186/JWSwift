@@ -23,10 +23,10 @@
 		18D234BF1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234BD1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib */; };
 		18D234C21EBB136C00BF855D /* JWHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234C01EBB136C00BF855D /* JWHomeDetailViewController.swift */; };
 		18D234C31EBB136C00BF855D /* JWHomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234C11EBB136C00BF855D /* JWHomeDetailViewController.xib */; };
-		18D234C71EBB1C4700BF855D /* JWMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234C51EBB1C4700BF855D /* JWMatchViewController.swift */; };
-		18D234C81EBB1C4700BF855D /* JWMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234C61EBB1C4700BF855D /* JWMatchViewController.xib */; };
-		18D234CC1EBB1C7B00BF855D /* JWMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CA1EBB1C7B00BF855D /* JWMallViewController.swift */; };
-		18D234CD1EBB1C7B00BF855D /* JWMallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234CB1EBB1C7B00BF855D /* JWMallViewController.xib */; };
+		18D234C71EBB1C4700BF855D /* JWToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234C51EBB1C4700BF855D /* JWToolViewController.swift */; };
+		18D234C81EBB1C4700BF855D /* JWToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234C61EBB1C4700BF855D /* JWToolViewController.xib */; };
+		18D234CC1EBB1C7B00BF855D /* JWTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CA1EBB1C7B00BF855D /* JWTopicViewController.swift */; };
+		18D234CD1EBB1C7B00BF855D /* JWTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234CB1EBB1C7B00BF855D /* JWTopicViewController.xib */; };
 		18D234D11EBB1C9600BF855D /* JWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */; };
 		18D234D21EBB1C9600BF855D /* JWMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D01EBB1C9600BF855D /* JWMeViewController.xib */; };
 		18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */; };
@@ -54,10 +54,10 @@
 		18D234BD1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		18D234C01EBB136C00BF855D /* JWHomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeDetailViewController.swift; sourceTree = "<group>"; };
 		18D234C11EBB136C00BF855D /* JWHomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWHomeDetailViewController.xib; sourceTree = "<group>"; };
-		18D234C51EBB1C4700BF855D /* JWMatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMatchViewController.swift; sourceTree = "<group>"; };
-		18D234C61EBB1C4700BF855D /* JWMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWMatchViewController.xib; sourceTree = "<group>"; };
-		18D234CA1EBB1C7B00BF855D /* JWMallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMallViewController.swift; sourceTree = "<group>"; };
-		18D234CB1EBB1C7B00BF855D /* JWMallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWMallViewController.xib; sourceTree = "<group>"; };
+		18D234C51EBB1C4700BF855D /* JWToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWToolViewController.swift; sourceTree = "<group>"; };
+		18D234C61EBB1C4700BF855D /* JWToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWToolViewController.xib; sourceTree = "<group>"; };
+		18D234CA1EBB1C7B00BF855D /* JWTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTopicViewController.swift; sourceTree = "<group>"; };
+		18D234CB1EBB1C7B00BF855D /* JWTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWTopicViewController.xib; sourceTree = "<group>"; };
 		18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMeViewController.swift; sourceTree = "<group>"; };
 		18D234D01EBB1C9600BF855D /* JWMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWMeViewController.xib; sourceTree = "<group>"; };
 		18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWEntertainmentViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 			children = (
 				18D234D31EBB1C9E00BF855D /* Entertainment */,
 				18D234CE1EBB1C7F00BF855D /* Me */,
-				18D234C91EBB1C4F00BF855D /* Mall */,
-				18D234C41EBB1C2E00BF855D /* Match */,
+				18D234C91EBB1C4F00BF855D /* Topic */,
+				18D234C41EBB1C2E00BF855D /* ToolVC */,
 				18D234AD1EBB01F600BF855D /* Home */,
 				18D234A61EBAFFD300BF855D /* Common */,
 				18D234941EBAFF6A00BF855D /* AppDelegate.swift */,
@@ -155,22 +155,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		18D234C41EBB1C2E00BF855D /* Match */ = {
+		18D234C41EBB1C2E00BF855D /* ToolVC */ = {
 			isa = PBXGroup;
 			children = (
-				18D234C51EBB1C4700BF855D /* JWMatchViewController.swift */,
-				18D234C61EBB1C4700BF855D /* JWMatchViewController.xib */,
+				18D234C51EBB1C4700BF855D /* JWToolViewController.swift */,
+				18D234C61EBB1C4700BF855D /* JWToolViewController.xib */,
 			);
-			path = Match;
+			path = ToolVC;
 			sourceTree = "<group>";
 		};
-		18D234C91EBB1C4F00BF855D /* Mall */ = {
+		18D234C91EBB1C4F00BF855D /* Topic */ = {
 			isa = PBXGroup;
 			children = (
-				18D234CA1EBB1C7B00BF855D /* JWMallViewController.swift */,
-				18D234CB1EBB1C7B00BF855D /* JWMallViewController.xib */,
+				18D234CA1EBB1C7B00BF855D /* JWTopicViewController.swift */,
+				18D234CB1EBB1C7B00BF855D /* JWTopicViewController.xib */,
 			);
-			path = Mall;
+			path = Topic;
 			sourceTree = "<group>";
 		};
 		18D234CE1EBB1C7F00BF855D /* Me */ = {
@@ -257,11 +257,11 @@
 				18D234B61EBB033B00BF855D /* JWHomeTableViewCell.xib in Resources */,
 				18D234B11EBB024700BF855D /* JWHomeViewController.xib in Resources */,
 				18D234C31EBB136C00BF855D /* JWHomeDetailViewController.xib in Resources */,
-				18D234C81EBB1C4700BF855D /* JWMatchViewController.xib in Resources */,
+				18D234C81EBB1C4700BF855D /* JWToolViewController.xib in Resources */,
 				18D2349C1EBAFF6A00BF855D /* Assets.xcassets in Resources */,
 				18D234BF1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib in Resources */,
 				18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */,
-				18D234CD1EBB1C7B00BF855D /* JWMallViewController.xib in Resources */,
+				18D234CD1EBB1C7B00BF855D /* JWTopicViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +278,7 @@
 				18D234B91EBB0B8900BF855D /* JWHomeModel.swift in Sources */,
 				18D234A81EBB000E00BF855D /* JWBasicNaviViewController.swift in Sources */,
 				18D234C21EBB136C00BF855D /* JWHomeDetailViewController.swift in Sources */,
-				18D234C71EBB1C4700BF855D /* JWMatchViewController.swift in Sources */,
+				18D234C71EBB1C4700BF855D /* JWToolViewController.swift in Sources */,
 				18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */,
 				18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */,
 				18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */,
@@ -287,7 +287,7 @@
 				18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */,
 				18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */,
 				18D234B01EBB024700BF855D /* JWHomeViewController.swift in Sources */,
-				18D234CC1EBB1C7B00BF855D /* JWMallViewController.swift in Sources */,
+				18D234CC1EBB1C7B00BF855D /* JWTopicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

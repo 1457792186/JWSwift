@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JWMatchViewController: JWBasicViewController {
+class JWToolViewController: JWBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

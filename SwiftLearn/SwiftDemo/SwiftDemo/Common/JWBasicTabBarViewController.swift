@@ -17,15 +17,15 @@ class JWBasicTabBarViewController: UITabBarController {
     }
 
     func initWithChildControllers(){
-        let matchVC = JWMatchViewController();
-        let entertainmentVC = JWEntertainmentViewController();
         let homeVC = JWHomeViewController();
-        let mallVC = JWMallViewController();
+        let topicVC = JWTopicViewController();
+        let entertainmentVC = JWEntertainmentViewController();
+        let toolVC = JWToolViewController();
         let meVC = JWMeViewController();
         
-        let vcArr:NSArray = [matchVC,entertainmentVC,homeVC,mallVC,meVC];
+        let vcArr:NSArray = [topicVC,entertainmentVC,homeVC,toolVC,meVC];
         
-        let nameArr:NSArray = ["赛事", "娱乐", "首页", "商城", "我的"];
+        let nameArr:NSArray = ["社区", "娱乐", "首页", "工具", "我的"];
         let imageArr:NSArray = ["tabbar_match", "tabbar_entertainment", "tabbar_homepage", "tabbar_mall", "tabbar_me"];
         let imageSelArr:NSArray = ["tabbar_match_sel", "tabbar_entertainment_sel", "tabbar_homepage_sel", "tabbar_mall_sel", "tabbar_me_sel"];
         
