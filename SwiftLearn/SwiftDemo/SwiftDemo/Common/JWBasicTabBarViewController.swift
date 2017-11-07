@@ -16,7 +16,7 @@ class JWBasicTabBarViewController: UITabBarController {
         self.initWithChildControllers();
     }
 
-    func initWithChildControllers(){
+    @objc func initWithChildControllers(){
         let homeVC = JWHomeViewController();
         let topicVC = JWTopicViewController();
         let entertainmentVC = JWEntertainmentViewController();
@@ -34,7 +34,7 @@ class JWBasicTabBarViewController: UITabBarController {
         }
     }
     
-    func addChildVC(vc:UIViewController,title:String,imageName:String,imageSelName:String){
+    @objc func addChildVC(vc:UIViewController,title:String,imageName:String,imageSelName:String){
         vc.tabBarItem.title = title;
         vc.title = title;
         vc.tabBarItem.image = UIImage.init(named: imageName);

@@ -11,7 +11,7 @@ import UIKit
 class JWHomeViewController: JWBasicViewController,UITableViewDelegate,UITableViewDataSource{
 
     @IBOutlet weak var homeTableView: UITableView!
-    var dataArr = [JWHomeModel]();
+    @objc var dataArr = [JWHomeModel]();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,14 @@ class JWHomeViewController: JWBasicViewController,UITableViewDelegate,UITableVie
         self.dataArrSet();
     }
 
-    func registerTableView() -> Void {
+    @objc func registerTableView() -> Void {
 //        self.homeTableView.register(JWHomeTableViewCell.self, forCellReuseIdentifier: "JWHomeTableViewCell");
         
         let cellNib = UINib(nibName: "JWHomeTableViewCell", bundle: nil)
         self.homeTableView.register(cellNib, forCellReuseIdentifier: "JWHomeTableViewCell")
     }
     
-    func dataArrSet(){
+    @objc func dataArrSet(){
         let nameArr = ["英雄联盟","DOTA"];
         let subNameArr = ["各路英雄大逃杀","荣耀背后的嗜血神灵"];
         
@@ -69,7 +69,7 @@ class JWHomeViewController: JWBasicViewController,UITableViewDelegate,UITableVie
         self.navigationController?.pushViewController(detailVC, animated:true);
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        return (80 * kScreenWidth / 375.0);
+        return (80 * mainScreenWidth / 375.0);
     }
     
     // MARK: - UITableViewDataSource

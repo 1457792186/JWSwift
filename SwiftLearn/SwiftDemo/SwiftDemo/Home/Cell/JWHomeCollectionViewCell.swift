@@ -9,7 +9,7 @@
 import UIKit
 
 class JWHomeCollectionViewCell: UICollectionViewCell {
-    var model:JWHomeDetailModel? = nil;
+    @objc var model:JWHomeDetailModel? = nil;
     
     @IBOutlet weak var showImageView: UIImageView!
     
@@ -18,7 +18,7 @@ class JWHomeCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setDataModel(dataModel:JWHomeDetailModel){
+    @objc func setDataModel(dataModel:JWHomeDetailModel){
         model = dataModel;
         self.showImageView?.image = UIImage.init(named: (model?.imageName)!);
     }

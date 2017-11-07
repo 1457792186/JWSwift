@@ -9,12 +9,12 @@
 import UIKit
 
 class JWHomeModel: NSObject {
-    var title:String;
-    var imageName:String;
-    var subTitle:String;
-    var content:JWHomeDetailsModel;
+    @objc var title:String;
+    @objc var imageName:String;
+    @objc var subTitle:String;
+    @objc var content:JWHomeDetailsModel;
     
-    init(dataDic:NSDictionary){
+    @objc init(dataDic:NSDictionary){
         title = dataDic.value(forKey:"title") as! String;
         imageName = dataDic.value(forKey: "imageName") as! String;
         subTitle = dataDic.value(forKey: "subTitle") as! String;

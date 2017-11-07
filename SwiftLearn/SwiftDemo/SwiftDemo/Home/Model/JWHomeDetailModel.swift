@@ -9,13 +9,13 @@
 import UIKit
 
 class JWHomeDetailModel: NSObject {
-    var title:String;
-    var imageName:String;
-    var type:String;
-    var audienceCount:Int;
-    var uper:String;
+    @objc var title:String;
+    @objc var imageName:String;
+    @objc var type:String;
+    @objc var audienceCount:Int;
+    @objc var uper:String;
     
-    init(dataDic:NSDictionary) {
+    @objc init(dataDic:NSDictionary) {
         title = dataDic.value(forKey:"title") as! String;
         imageName = dataDic.value(forKey: "imageName") as! String;
         let persons:String = dataDic.value(forKey: "audienceCount") as! String;

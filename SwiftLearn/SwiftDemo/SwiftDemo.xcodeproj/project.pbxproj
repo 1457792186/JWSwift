@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */; };
+		184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */; };
+		184B07CA1FB15C4800B7C016 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C91FB15C4800B7C016 /* JWLabel.swift */; };
+		184B07CC1FB15C5700B7C016 /* JWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07CB1FB15C5700B7C016 /* JWButton.swift */; };
+		184B07CE1FB15C6C00B7C016 /* JWTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07CD1FB15C6C00B7C016 /* JWTextView.swift */; };
+		184B07D01FB15C7A00B7C016 /* JWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07CF1FB15C7A00B7C016 /* JWTextField.swift */; };
 		18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234941EBAFF6A00BF855D /* AppDelegate.swift */; };
 		18D2349C1EBAFF6A00BF855D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D2349B1EBAFF6A00BF855D /* Assets.xcassets */; };
 		18D2349F1EBAFF6A00BF855D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D2349D1EBAFF6A00BF855D /* LaunchScreen.storyboard */; };
@@ -38,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSwiftConst.swift; sourceTree = "<group>"; };
+		184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWFontAdaptor.swift; sourceTree = "<group>"; };
+		184B07C91FB15C4800B7C016 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
+		184B07CB1FB15C5700B7C016 /* JWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWButton.swift; sourceTree = "<group>"; };
+		184B07CD1FB15C6C00B7C016 /* JWTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTextView.swift; sourceTree = "<group>"; };
+		184B07CF1FB15C7A00B7C016 /* JWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTextField.swift; sourceTree = "<group>"; };
 		18D234911EBAFF6A00BF855D /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D234941EBAFF6A00BF855D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D2349B1EBAFF6A00BF855D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +97,26 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
+		184B07C51FB1583300B7C016 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				184B07C61FB1588C00B7C016 /* Font */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		184B07C61FB1588C00B7C016 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */,
+				184B07C91FB15C4800B7C016 /* JWLabel.swift */,
+				184B07CB1FB15C5700B7C016 /* JWButton.swift */,
+				184B07CD1FB15C6C00B7C016 /* JWTextView.swift */,
+				184B07CF1FB15C7A00B7C016 /* JWTextField.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		18D234881EBAFF6A00BF855D = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +154,7 @@
 		18D234A61EBAFFD300BF855D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				184B07C51FB1583300B7C016 /* Tools */,
 				18D234A71EBB000E00BF855D /* JWBasicNaviViewController.swift */,
 				18D234A91EBB002A00BF855D /* JWBasicTabBarViewController.swift */,
 				18D234AB1EBB003E00BF855D /* JWBasicViewController.swift */,
@@ -230,12 +261,13 @@
 			attributes = {
 				CLASSPREFIX = JW;
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = UgoMedia;
 				TargetAttributes = {
 					18D234901EBAFF6A00BF855D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = CL7JKSS9Z7;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -284,11 +316,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D234D11EBB1C9600BF855D /* JWMeViewController.swift in Sources */,
+				184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */,
+				184B07D01FB15C7A00B7C016 /* JWTextField.swift in Sources */,
 				18D234BB1EBB0C4C00BF855D /* JWHomeDetailModel.swift in Sources */,
 				18D234AC1EBB003E00BF855D /* JWBasicViewController.swift in Sources */,
 				18D234B91EBB0B8900BF855D /* JWHomeModel.swift in Sources */,
 				18D234A81EBB000E00BF855D /* JWBasicNaviViewController.swift in Sources */,
+				184B07CE1FB15C6C00B7C016 /* JWTextView.swift in Sources */,
 				18D234C21EBB136C00BF855D /* JWHomeDetailViewController.swift in Sources */,
+				184B07CA1FB15C4800B7C016 /* JWLabel.swift in Sources */,
 				18D234C71EBB1C4700BF855D /* JWToolViewController.swift in Sources */,
 				18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */,
 				184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */,
@@ -299,6 +335,7 @@
 				18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */,
 				18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */,
 				18D234B01EBB024700BF855D /* JWHomeViewController.swift in Sources */,
+				184B07CC1FB15C5700B7C016 /* JWButton.swift in Sources */,
 				18D234CC1EBB1C7B00BF855D /* JWTopicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +363,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -334,7 +373,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -376,7 +419,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -384,7 +429,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -421,7 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UgoMedia.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -436,7 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UgoMedia.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

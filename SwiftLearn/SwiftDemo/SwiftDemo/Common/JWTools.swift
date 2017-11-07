@@ -8,16 +8,13 @@
 
 import UIKit
 
-let kScreenHeight = UIScreen.main.bounds.size.height
-let kScreenWidth = UIScreen.main.bounds.size.width
-
 class JWTools: NSObject {
     
     /*
      *显示Hud
      *hudStr:显示的文本
      */
-    class func showHud(hudStr:String){
+    @objc class func showHud(hudStr:String){
         if hudStr.isEmpty{
             return;
         }
@@ -32,7 +29,7 @@ class JWTools: NSObject {
         
         
         let labelFont:UIFont = UIFont.systemFont(ofSize: 15)
-        let labelFrame:CGRect = NSString.init(string:hudStr).boundingRect(with: CGSize.init(width: 290, height: 9000), options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:labelFont], context: nil);
+        let labelFrame:CGRect = NSString.init(string:hudStr).boundingRect(with: CGSize.init(width: 290, height: 9000), options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font:labelFont], context: nil);
         let label:UILabel = UILabel.init(frame: CGRect.init(x: 10, y: 5, width: ceil(labelFrame.size.width), height: ceil(labelFrame.size.height)));
         label.text = hudStr;
         label.textColor = UIColor.white;
@@ -55,7 +52,7 @@ class JWTools: NSObject {
      *length:限定宽高，0时为Label宽高
      *isWidth:计算宽/高，true为宽
      */
-    class func labelFrame(label:UILabel,length:Float,isWidth:Bool) -> CGRect {
+    @objc class func labelFrame(label:UILabel,length:Float,isWidth:Bool) -> CGRect {
         var lengths:Float = length;
         if length==0 {
             lengths = Float(label.frame.size.width);
@@ -65,8 +62,44 @@ class JWTools: NSObject {
             lengths = Float(label.frame.size.height);
             size = CGSize.init(width: 9000, height: CGFloat(lengths));
         }
-        let labelFrame:CGRect = NSString.init(string:label.text!).boundingRect(with: size, options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:label.font], context: nil);
+        let labelFrame:CGRect = NSString.init(string:label.text!).boundingRect(with: size, options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font:label.font], context: nil);
         return labelFrame;
+    }
+    
+    /*
+     HexString转成Color
+     */
+    @objc class func colorWithHexString(hex:String) ->UIColor {
+        var cString = hex.trimmingCharacters(in:CharacterSet.whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            let index = cString.index(cString.startIndex, offsetBy:1)
+            cString = String(cString[index...])
+//            cString = cString.substring(from: index)
+        }
+
+        if (cString.count != 6) {
+            return UIColor.red
+        }
+        
+        let rIndex = cString.index(cString.startIndex, offsetBy: 2)
+        let rString = String(cString[..<rIndex])
+//        let rString = cString.substring(to: rIndex)
+        let otherString = String(cString[rIndex...])
+//        let otherString = cString.substring(from: rIndex)
+        let gIndex = otherString.index(otherString.startIndex, offsetBy: 2)
+        let gString = String(otherString[..<gIndex])
+//        let gString = otherString.substring(to: gIndex)
+        let bIndex = cString.index(cString.endIndex, offsetBy: -2)
+        let bString = String(cString[bIndex...])
+//        let bString = cString.substring(from: bIndex)
+        
+        var r:CUnsignedInt = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
+        Scanner(string: rString).scanHexInt32(&r)
+        Scanner(string: gString).scanHexInt32(&g)
+        Scanner(string: bString).scanHexInt32(&b)
+        
+        return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
     }
     
 }

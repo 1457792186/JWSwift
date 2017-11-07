@@ -9,9 +9,9 @@
 import UIKit
 
 class JWHomeDetailsModel: NSObject {
-    var content:NSMutableArray = NSMutableArray();
+    @objc var content:NSMutableArray = NSMutableArray();
     
-    init(dataArr:NSArray) {
+    @objc init(dataArr:NSArray) {
         for detailDic in dataArr {
             content.add(JWHomeDetailModel.init(dataDic: detailDic as! NSDictionary));
         }

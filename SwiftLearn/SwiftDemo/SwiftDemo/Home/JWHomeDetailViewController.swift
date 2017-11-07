@@ -9,7 +9,7 @@
 import UIKit
 
 class JWHomeDetailViewController: JWBasicViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
-    var dataModel:JWHomeDetailsModel? = nil;
+    @objc var dataModel:JWHomeDetailsModel? = nil;
     
     @IBOutlet weak var detailCollectionView: UICollectionView!
     
@@ -20,7 +20,7 @@ class JWHomeDetailViewController: JWBasicViewController,UICollectionViewDataSour
         self.registerCollectionView();
     }
     
-    func registerCollectionView(){
+    @objc func registerCollectionView(){
         let collectionNib = UINib.init(nibName: "JWHomeCollectionViewCell", bundle: nil);
         
         self.detailCollectionView.register(collectionNib, forCellWithReuseIdentifier: "JWHomeCollectionViewCell");
@@ -45,8 +45,8 @@ class JWHomeDetailViewController: JWBasicViewController,UICollectionViewDataSour
     
     // MARK: - UICollectionViewFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let width = (kScreenWidth - 15)/2;
-        let height = 80 * (kScreenWidth - 15) / 360;
+        let width = (mainScreenWidth - 15)/2;
+        let height = 80 * (mainScreenWidth - 15) / 360;
         
         return CGSize.init(width: width, height: height);
     }

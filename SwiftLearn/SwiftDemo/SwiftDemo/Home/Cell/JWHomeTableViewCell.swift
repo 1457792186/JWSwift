@@ -9,7 +9,7 @@
 import UIKit
 
 class JWHomeTableViewCell: UITableViewCell {
-    var model:JWHomeModel? = nil;
+    @objc var model:JWHomeModel? = nil;
     @IBOutlet weak var showImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var introLabel: UILabel!
@@ -25,7 +25,7 @@ class JWHomeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setData(dataModel:JWHomeModel){
+    @objc func setData(dataModel:JWHomeModel){
         model = dataModel;
         self.showImageView?.image = UIImage.init(named: (model?.imageName)!);
         self.nameLabel?.text = model?.title as String?;
