@@ -27,7 +27,7 @@ class JWBasicNaviViewController: UINavigationController {
         self.navigationBar.tintColor = UIColor.white;
         self.navigationBar.barTintColor = UIColor.cyan;
         self.navigationBar.isTranslucent = false;
-        self.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFont(ofSize: 17),NSForegroundColorAttributeName:UIColor.white];
+        self.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.boldSystemFont(ofSize: 20),NSForegroundColorAttributeName:UIColor.white];
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: UIScreen.main.bounds);
         
         let rootTabVC = JWBasicTabBarViewController();
-        rootTabVC.selectedIndex = 2;
+//        rootTabVC.selectedIndex = 2;
+        rootTabVC.selectedIndex = (rootTabVC.viewControllers?.count)! - 1;
         window?.rootViewController = rootTabVC;
         
         window?.makeKeyAndVisible();

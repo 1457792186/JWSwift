@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */; };
 		18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234941EBAFF6A00BF855D /* AppDelegate.swift */; };
 		18D2349C1EBAFF6A00BF855D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D2349B1EBAFF6A00BF855D /* Assets.xcassets */; };
 		18D2349F1EBAFF6A00BF855D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D2349D1EBAFF6A00BF855D /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSwiftConst.swift; sourceTree = "<group>"; };
 		18D234911EBAFF6A00BF855D /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D234941EBAFF6A00BF855D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D2349B1EBAFF6A00BF855D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184B07BF1FB146A900B7C016 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		18D234881EBAFF6A00BF855D = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		18D234931EBAFF6A00BF855D /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				184B07BF1FB146A900B7C016 /* SupportFiles */,
 				18D234D31EBB1C9E00BF855D /* Entertainment */,
 				18D234CE1EBB1C7F00BF855D /* Me */,
 				18D234C91EBB1C4F00BF855D /* Topic */,
@@ -280,6 +291,7 @@
 				18D234C21EBB136C00BF855D /* JWHomeDetailViewController.swift in Sources */,
 				18D234C71EBB1C4700BF855D /* JWToolViewController.swift in Sources */,
 				18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */,
+				184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */,
 				18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */,
 				18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */,
 				18F122281EBC3D490060FBF5 /* JWTools.swift in Sources */,

@@ -12,8 +12,11 @@ class JWMeViewController: JWBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.navigationItem.title = "个人中心";
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
