@@ -13,7 +13,12 @@ class JWButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.titleLabel?.font = JWFontAdaptor.adjustFont(fixFont: (self.titleLabel?.font)!)
+        self.fitFontSize()
     }
 
+    func fitFontSize() {
+        self.titleLabel?.font = JWFontAdaptor.adjustFont(fixFont: (self.titleLabel?.font)!)
+    }
+    
+    
 }

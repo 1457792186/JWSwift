@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1826CF951FB2B2CD0058E637 /* JWNaviBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF941FB2B2CD0058E637 /* JWNaviBarButton.swift */; };
 		184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */; };
 		184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */; };
 		184B07CA1FB15C4800B7C016 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C91FB15C4800B7C016 /* JWLabel.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1826CF941FB2B2CD0058E637 /* JWNaviBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWNaviBarButton.swift; sourceTree = "<group>"; };
 		184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSwiftConst.swift; sourceTree = "<group>"; };
 		184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWFontAdaptor.swift; sourceTree = "<group>"; };
 		184B07C91FB15C4800B7C016 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1826CF931FB2B28C0058E637 /* UIBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				1826CF941FB2B2CD0058E637 /* JWNaviBarButton.swift */,
+			);
+			path = UIBarButton;
+			sourceTree = "<group>";
+		};
 		184B07BF1FB146A900B7C016 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		184B07C51FB1583300B7C016 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1826CF931FB2B28C0058E637 /* UIBarButton */,
 				184B07C61FB1588C00B7C016 /* Font */,
 			);
 			path = Tools;
@@ -332,6 +343,7 @@
 				18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */,
 				18F122281EBC3D490060FBF5 /* JWTools.swift in Sources */,
 				18D234B51EBB033B00BF855D /* JWHomeTableViewCell.swift in Sources */,
+				1826CF951FB2B2CD0058E637 /* JWNaviBarButton.swift in Sources */,
 				18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */,
 				18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */,
 				18D234B01EBB024700BF855D /* JWHomeViewController.swift in Sources */,
