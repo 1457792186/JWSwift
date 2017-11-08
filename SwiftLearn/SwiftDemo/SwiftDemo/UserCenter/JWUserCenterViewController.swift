@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JWMeViewController: JWBasicViewController {
+class JWUserCenterViewController: JWBasicViewController {
 
     @IBOutlet weak var avatarBtn: UIButton!
     @IBOutlet weak var pointBtn: JWButton!

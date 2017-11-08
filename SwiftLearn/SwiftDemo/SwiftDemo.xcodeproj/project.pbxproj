@@ -33,8 +33,8 @@
 		18D234C81EBB1C4700BF855D /* JWToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234C61EBB1C4700BF855D /* JWToolViewController.xib */; };
 		18D234CC1EBB1C7B00BF855D /* JWTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CA1EBB1C7B00BF855D /* JWTopicViewController.swift */; };
 		18D234CD1EBB1C7B00BF855D /* JWTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234CB1EBB1C7B00BF855D /* JWTopicViewController.xib */; };
-		18D234D11EBB1C9600BF855D /* JWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */; };
-		18D234D21EBB1C9600BF855D /* JWMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D01EBB1C9600BF855D /* JWMeViewController.xib */; };
+		18D234D11EBB1C9600BF855D /* JWUserCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234CF1EBB1C9600BF855D /* JWUserCenterViewController.swift */; };
+		18D234D21EBB1C9600BF855D /* JWUserCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D01EBB1C9600BF855D /* JWUserCenterViewController.xib */; };
 		18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */; };
 		18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */; };
 		18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */; };
@@ -70,8 +70,8 @@
 		18D234C61EBB1C4700BF855D /* JWToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWToolViewController.xib; sourceTree = "<group>"; };
 		18D234CA1EBB1C7B00BF855D /* JWTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTopicViewController.swift; sourceTree = "<group>"; };
 		18D234CB1EBB1C7B00BF855D /* JWTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWTopicViewController.xib; sourceTree = "<group>"; };
-		18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMeViewController.swift; sourceTree = "<group>"; };
-		18D234D01EBB1C9600BF855D /* JWMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWMeViewController.xib; sourceTree = "<group>"; };
+		18D234CF1EBB1C9600BF855D /* JWUserCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWUserCenterViewController.swift; sourceTree = "<group>"; };
+		18D234D01EBB1C9600BF855D /* JWUserCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWUserCenterViewController.xib; sourceTree = "<group>"; };
 		18D234D41EBB1CBB00BF855D /* JWEntertainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWEntertainmentViewController.swift; sourceTree = "<group>"; };
 		18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWEntertainmentViewController.xib; sourceTree = "<group>"; };
 		18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeDetailsModel.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			children = (
 				184B07BF1FB146A900B7C016 /* SupportFiles */,
 				18D234D31EBB1C9E00BF855D /* Entertainment */,
-				18D234CE1EBB1C7F00BF855D /* Me */,
+				18D234CE1EBB1C7F00BF855D /* UserCenter */,
 				18D234C91EBB1C4F00BF855D /* Topic */,
 				18D234C41EBB1C2E00BF855D /* ToolVC */,
 				18D234AD1EBB01F600BF855D /* Home */,
@@ -215,13 +215,13 @@
 			path = Topic;
 			sourceTree = "<group>";
 		};
-		18D234CE1EBB1C7F00BF855D /* Me */ = {
+		18D234CE1EBB1C7F00BF855D /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
-				18D234CF1EBB1C9600BF855D /* JWMeViewController.swift */,
-				18D234D01EBB1C9600BF855D /* JWMeViewController.xib */,
+				18D234CF1EBB1C9600BF855D /* JWUserCenterViewController.swift */,
+				18D234D01EBB1C9600BF855D /* JWUserCenterViewController.xib */,
 			);
-			path = Me;
+			path = UserCenter;
 			sourceTree = "<group>";
 		};
 		18D234D31EBB1C9E00BF855D /* Entertainment */ = {
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D2349F1EBAFF6A00BF855D /* LaunchScreen.storyboard in Resources */,
-				18D234D21EBB1C9600BF855D /* JWMeViewController.xib in Resources */,
+				18D234D21EBB1C9600BF855D /* JWUserCenterViewController.xib in Resources */,
 				18D234B61EBB033B00BF855D /* JWHomeTableViewCell.xib in Resources */,
 				18D234B11EBB024700BF855D /* JWHomeViewController.xib in Resources */,
 				18D234C31EBB136C00BF855D /* JWHomeDetailViewController.xib in Resources */,
@@ -315,7 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D234D11EBB1C9600BF855D /* JWMeViewController.swift in Sources */,
+				18D234D11EBB1C9600BF855D /* JWUserCenterViewController.swift in Sources */,
 				184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */,
 				184B07D01FB15C7A00B7C016 /* JWTextField.swift in Sources */,
 				18D234BB1EBB0C4C00BF855D /* JWHomeDetailModel.swift in Sources */,

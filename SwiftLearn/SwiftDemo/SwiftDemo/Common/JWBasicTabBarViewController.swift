@@ -21,7 +21,7 @@ class JWBasicTabBarViewController: UITabBarController {
         let topicVC = JWTopicViewController();
         let entertainmentVC = JWEntertainmentViewController();
         let toolVC = JWToolViewController();
-        let meVC = JWMeViewController();
+        let meVC = JWUserCenterViewController();
         
         let vcArr:NSArray = [topicVC,entertainmentVC,homeVC,toolVC,meVC];
         
