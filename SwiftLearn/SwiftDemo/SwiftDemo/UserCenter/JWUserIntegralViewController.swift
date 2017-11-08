@@ -10,6 +10,10 @@ import UIKit
 
 class JWUserIntegralViewController: UIViewController {
 
+    @IBOutlet weak var integralTableView: UITableView!
+    @IBOutlet weak var detailTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JWUserIntegralViewController" customModule="SwiftDemo" customModuleProvider="target">
             <connections>
+                <outlet property="detailTableView" destination="xwp-TO-DKN" id="dTw-s1-zBx"/>
+                <outlet property="integralTableView" destination="F4n-kS-yVp" id="DhP-pW-7QJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +20,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xwp-TO-DKN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-kS-yVp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F4n-kS-yVp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3lS-Ml-n0e"/>
+                <constraint firstAttribute="trailing" secondItem="F4n-kS-yVp" secondAttribute="trailing" id="9XQ-5z-VVy"/>
+                <constraint firstItem="xwp-TO-DKN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9nw-Oi-n5S"/>
+                <constraint firstItem="xwp-TO-DKN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ASV-Kq-mYB"/>
+                <constraint firstItem="F4n-kS-yVp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SFe-ax-vDK"/>
+                <constraint firstAttribute="bottom" secondItem="xwp-TO-DKN" secondAttribute="bottom" id="p0K-Kw-J5O"/>
+                <constraint firstAttribute="trailing" secondItem="xwp-TO-DKN" secondAttribute="trailing" id="pp8-Uu-sji"/>
+                <constraint firstAttribute="bottom" secondItem="F4n-kS-yVp" secondAttribute="bottom" id="ti2-Ud-1UI"/>
+            </constraints>
         </view>
     </objects>
 </document>
