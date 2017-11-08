@@ -8,8 +8,8 @@
 
 import UIKit
 
-class JWUserIntegralViewController: UIViewController {
-
+class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
     @IBOutlet weak var integralTableView: UITableView!
     @IBOutlet weak var detailTableView: UITableView!
     
@@ -19,11 +19,17 @@ class JWUserIntegralViewController: UIViewController {
 
         self.title = "我的积分"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    //    MARK: - UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0;
     }
     
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell.init();
+    }
+    
+    //    MARK: - UITableViewDelegate
+    
 }
