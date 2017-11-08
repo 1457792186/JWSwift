@@ -47,7 +47,7 @@ class JWNaviBarButton: UIBarButtonItem {
             barButton.setTitle((title as String), for: UIControlState.selected)
         }
         
-        barButton.target(forAction: action, withSender: target)
+        barButton.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
         
         let barButtonItem:JWNaviBarButton = JWNaviBarButton.init(customView:barButton)
         
@@ -59,7 +59,7 @@ class JWNaviBarButton: UIBarButtonItem {
         
         let barButton:JWButton = JWButton.init(frame: CGRect.init(x: 0.0, y: 0.0, width: 30.0, height: 30.0))
         barButton.setBackgroundImage(UIImage.init(named: "back_arrow"), for: UIControlState.normal)
-        barButton.target(forAction: action, withSender: target)
+        barButton.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
 
         let barButtonItem:JWNaviBarButton = JWNaviBarButton.init(customView:barButton)
 

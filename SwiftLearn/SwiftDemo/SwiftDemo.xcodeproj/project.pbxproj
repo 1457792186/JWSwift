@@ -8,6 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		1826CF951FB2B2CD0058E637 /* JWNaviBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF941FB2B2CD0058E637 /* JWNaviBarButton.swift */; };
+		1826CF991FB2DD750058E637 /* JWUserIntegralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF971FB2DD750058E637 /* JWUserIntegralViewController.swift */; };
+		1826CF9A1FB2DD750058E637 /* JWUserIntegralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CF981FB2DD750058E637 /* JWUserIntegralViewController.xib */; };
+		1826CF9D1FB2DF490058E637 /* JWSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF9B1FB2DF490058E637 /* JWSignInViewController.swift */; };
+		1826CF9E1FB2DF490058E637 /* JWSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CF9C1FB2DF490058E637 /* JWSignInViewController.xib */; };
+		1826CFA11FB2DF620058E637 /* JWUserTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF9F1FB2DF620058E637 /* JWUserTopicViewController.swift */; };
+		1826CFA21FB2DF620058E637 /* JWUserTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFA01FB2DF620058E637 /* JWUserTopicViewController.xib */; };
+		1826CFA51FB2DF700058E637 /* JWuserActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFA31FB2DF700058E637 /* JWuserActivityViewController.swift */; };
+		1826CFA61FB2DF700058E637 /* JWuserActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFA41FB2DF700058E637 /* JWuserActivityViewController.xib */; };
+		1826CFA91FB2DF830058E637 /* JWIntegralShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFA71FB2DF830058E637 /* JWIntegralShopViewController.swift */; };
+		1826CFAA1FB2DF830058E637 /* JWIntegralShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFA81FB2DF830058E637 /* JWIntegralShopViewController.xib */; };
+		1826CFAD1FB2DF950058E637 /* JWUserFansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFAB1FB2DF950058E637 /* JWUserFansViewController.swift */; };
+		1826CFAE1FB2DF950058E637 /* JWUserFansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFAC1FB2DF950058E637 /* JWUserFansViewController.xib */; };
+		1826CFB11FB2DFB30058E637 /* JWUserDynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFAF1FB2DFB30058E637 /* JWUserDynamicViewController.swift */; };
+		1826CFB21FB2DFB30058E637 /* JWUserDynamicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFB01FB2DFB30058E637 /* JWUserDynamicViewController.xib */; };
+		1826CFB51FB2DFC30058E637 /* JWUserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFB31FB2DFC30058E637 /* JWUserCollectionViewController.swift */; };
+		1826CFB61FB2DFC30058E637 /* JWUserCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFB41FB2DFC30058E637 /* JWUserCollectionViewController.xib */; };
+		1826CFB91FB2DFCF0058E637 /* JWUserOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFB71FB2DFCF0058E637 /* JWUserOrderViewController.swift */; };
+		1826CFBA1FB2DFCF0058E637 /* JWUserOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFB81FB2DFCF0058E637 /* JWUserOrderViewController.xib */; };
+		1826CFBD1FB2DFE40058E637 /* JWSysNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFBB1FB2DFE40058E637 /* JWSysNotificationViewController.swift */; };
+		1826CFBE1FB2DFE40058E637 /* JWSysNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFBC1FB2DFE40058E637 /* JWSysNotificationViewController.xib */; };
+		1826CFC11FB2DFF60058E637 /* JWUserMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFBF1FB2DFF60058E637 /* JWUserMessageViewController.swift */; };
+		1826CFC21FB2DFF60058E637 /* JWUserMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFC01FB2DFF60058E637 /* JWUserMessageViewController.xib */; };
+		1826CFC51FB2E0030058E637 /* JWUserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFC31FB2E0030058E637 /* JWUserSettingViewController.swift */; };
+		1826CFC61FB2E0030058E637 /* JWUserSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFC41FB2E0030058E637 /* JWUserSettingViewController.xib */; };
+		1826CFC91FB2E0100058E637 /* JWUserPhoneCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFC71FB2E0100058E637 /* JWUserPhoneCheckViewController.swift */; };
+		1826CFCA1FB2E0100058E637 /* JWUserPhoneCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFC81FB2E0100058E637 /* JWUserPhoneCheckViewController.xib */; };
+		1826CFCD1FB2E03E0058E637 /* JWUserEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFCB1FB2E03E0058E637 /* JWUserEditViewController.swift */; };
+		1826CFCE1FB2E03E0058E637 /* JWUserEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFCC1FB2E03E0058E637 /* JWUserEditViewController.xib */; };
 		184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */; };
 		184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */; };
 		184B07CA1FB15C4800B7C016 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C91FB15C4800B7C016 /* JWLabel.swift */; };
@@ -44,6 +72,34 @@
 
 /* Begin PBXFileReference section */
 		1826CF941FB2B2CD0058E637 /* JWNaviBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWNaviBarButton.swift; sourceTree = "<group>"; };
+		1826CF971FB2DD750058E637 /* JWUserIntegralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralViewController.swift; sourceTree = "<group>"; };
+		1826CF981FB2DD750058E637 /* JWUserIntegralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserIntegralViewController.xib; sourceTree = "<group>"; };
+		1826CF9B1FB2DF490058E637 /* JWSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSignInViewController.swift; sourceTree = "<group>"; };
+		1826CF9C1FB2DF490058E637 /* JWSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWSignInViewController.xib; sourceTree = "<group>"; };
+		1826CF9F1FB2DF620058E637 /* JWUserTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserTopicViewController.swift; sourceTree = "<group>"; };
+		1826CFA01FB2DF620058E637 /* JWUserTopicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserTopicViewController.xib; sourceTree = "<group>"; };
+		1826CFA31FB2DF700058E637 /* JWuserActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWuserActivityViewController.swift; sourceTree = "<group>"; };
+		1826CFA41FB2DF700058E637 /* JWuserActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWuserActivityViewController.xib; sourceTree = "<group>"; };
+		1826CFA71FB2DF830058E637 /* JWIntegralShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWIntegralShopViewController.swift; sourceTree = "<group>"; };
+		1826CFA81FB2DF830058E637 /* JWIntegralShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWIntegralShopViewController.xib; sourceTree = "<group>"; };
+		1826CFAB1FB2DF950058E637 /* JWUserFansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserFansViewController.swift; sourceTree = "<group>"; };
+		1826CFAC1FB2DF950058E637 /* JWUserFansViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserFansViewController.xib; sourceTree = "<group>"; };
+		1826CFAF1FB2DFB30058E637 /* JWUserDynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserDynamicViewController.swift; sourceTree = "<group>"; };
+		1826CFB01FB2DFB30058E637 /* JWUserDynamicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserDynamicViewController.xib; sourceTree = "<group>"; };
+		1826CFB31FB2DFC30058E637 /* JWUserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserCollectionViewController.swift; sourceTree = "<group>"; };
+		1826CFB41FB2DFC30058E637 /* JWUserCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserCollectionViewController.xib; sourceTree = "<group>"; };
+		1826CFB71FB2DFCF0058E637 /* JWUserOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserOrderViewController.swift; sourceTree = "<group>"; };
+		1826CFB81FB2DFCF0058E637 /* JWUserOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserOrderViewController.xib; sourceTree = "<group>"; };
+		1826CFBB1FB2DFE40058E637 /* JWSysNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSysNotificationViewController.swift; sourceTree = "<group>"; };
+		1826CFBC1FB2DFE40058E637 /* JWSysNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWSysNotificationViewController.xib; sourceTree = "<group>"; };
+		1826CFBF1FB2DFF60058E637 /* JWUserMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserMessageViewController.swift; sourceTree = "<group>"; };
+		1826CFC01FB2DFF60058E637 /* JWUserMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserMessageViewController.xib; sourceTree = "<group>"; };
+		1826CFC31FB2E0030058E637 /* JWUserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserSettingViewController.swift; sourceTree = "<group>"; };
+		1826CFC41FB2E0030058E637 /* JWUserSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserSettingViewController.xib; sourceTree = "<group>"; };
+		1826CFC71FB2E0100058E637 /* JWUserPhoneCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserPhoneCheckViewController.swift; sourceTree = "<group>"; };
+		1826CFC81FB2E0100058E637 /* JWUserPhoneCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserPhoneCheckViewController.xib; sourceTree = "<group>"; };
+		1826CFCB1FB2E03E0058E637 /* JWUserEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserEditViewController.swift; sourceTree = "<group>"; };
+		1826CFCC1FB2E03E0058E637 /* JWUserEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserEditViewController.xib; sourceTree = "<group>"; };
 		184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSwiftConst.swift; sourceTree = "<group>"; };
 		184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWFontAdaptor.swift; sourceTree = "<group>"; };
 		184B07C91FB15C4800B7C016 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
@@ -231,6 +287,34 @@
 			children = (
 				18D234CF1EBB1C9600BF855D /* JWUserCenterViewController.swift */,
 				18D234D01EBB1C9600BF855D /* JWUserCenterViewController.xib */,
+				1826CFCB1FB2E03E0058E637 /* JWUserEditViewController.swift */,
+				1826CFCC1FB2E03E0058E637 /* JWUserEditViewController.xib */,
+				1826CF971FB2DD750058E637 /* JWUserIntegralViewController.swift */,
+				1826CF981FB2DD750058E637 /* JWUserIntegralViewController.xib */,
+				1826CFA71FB2DF830058E637 /* JWIntegralShopViewController.swift */,
+				1826CFA81FB2DF830058E637 /* JWIntegralShopViewController.xib */,
+				1826CF9B1FB2DF490058E637 /* JWSignInViewController.swift */,
+				1826CF9C1FB2DF490058E637 /* JWSignInViewController.xib */,
+				1826CF9F1FB2DF620058E637 /* JWUserTopicViewController.swift */,
+				1826CFA01FB2DF620058E637 /* JWUserTopicViewController.xib */,
+				1826CFA31FB2DF700058E637 /* JWuserActivityViewController.swift */,
+				1826CFA41FB2DF700058E637 /* JWuserActivityViewController.xib */,
+				1826CFAB1FB2DF950058E637 /* JWUserFansViewController.swift */,
+				1826CFAC1FB2DF950058E637 /* JWUserFansViewController.xib */,
+				1826CFAF1FB2DFB30058E637 /* JWUserDynamicViewController.swift */,
+				1826CFB01FB2DFB30058E637 /* JWUserDynamicViewController.xib */,
+				1826CFB31FB2DFC30058E637 /* JWUserCollectionViewController.swift */,
+				1826CFB41FB2DFC30058E637 /* JWUserCollectionViewController.xib */,
+				1826CFB71FB2DFCF0058E637 /* JWUserOrderViewController.swift */,
+				1826CFB81FB2DFCF0058E637 /* JWUserOrderViewController.xib */,
+				1826CFBB1FB2DFE40058E637 /* JWSysNotificationViewController.swift */,
+				1826CFBC1FB2DFE40058E637 /* JWSysNotificationViewController.xib */,
+				1826CFBF1FB2DFF60058E637 /* JWUserMessageViewController.swift */,
+				1826CFC01FB2DFF60058E637 /* JWUserMessageViewController.xib */,
+				1826CFC31FB2E0030058E637 /* JWUserSettingViewController.swift */,
+				1826CFC41FB2E0030058E637 /* JWUserSettingViewController.xib */,
+				1826CFC71FB2E0100058E637 /* JWUserPhoneCheckViewController.swift */,
+				1826CFC81FB2E0100058E637 /* JWUserPhoneCheckViewController.xib */,
 			);
 			path = UserCenter;
 			sourceTree = "<group>";
@@ -308,12 +392,26 @@
 			files = (
 				18D2349F1EBAFF6A00BF855D /* LaunchScreen.storyboard in Resources */,
 				18D234D21EBB1C9600BF855D /* JWUserCenterViewController.xib in Resources */,
+				1826CFCE1FB2E03E0058E637 /* JWUserEditViewController.xib in Resources */,
+				1826CFB21FB2DFB30058E637 /* JWUserDynamicViewController.xib in Resources */,
+				1826CFA61FB2DF700058E637 /* JWuserActivityViewController.xib in Resources */,
+				1826CFA21FB2DF620058E637 /* JWUserTopicViewController.xib in Resources */,
+				1826CFC61FB2E0030058E637 /* JWUserSettingViewController.xib in Resources */,
+				1826CFAE1FB2DF950058E637 /* JWUserFansViewController.xib in Resources */,
+				1826CFBE1FB2DFE40058E637 /* JWSysNotificationViewController.xib in Resources */,
 				18D234B61EBB033B00BF855D /* JWHomeTableViewCell.xib in Resources */,
 				18D234B11EBB024700BF855D /* JWHomeViewController.xib in Resources */,
+				1826CFC21FB2DFF60058E637 /* JWUserMessageViewController.xib in Resources */,
+				1826CFB61FB2DFC30058E637 /* JWUserCollectionViewController.xib in Resources */,
+				1826CFBA1FB2DFCF0058E637 /* JWUserOrderViewController.xib in Resources */,
 				18D234C31EBB136C00BF855D /* JWHomeDetailViewController.xib in Resources */,
 				18D234C81EBB1C4700BF855D /* JWToolViewController.xib in Resources */,
 				18D2349C1EBAFF6A00BF855D /* Assets.xcassets in Resources */,
+				1826CFAA1FB2DF830058E637 /* JWIntegralShopViewController.xib in Resources */,
+				1826CF9E1FB2DF490058E637 /* JWSignInViewController.xib in Resources */,
+				1826CF9A1FB2DD750058E637 /* JWUserIntegralViewController.xib in Resources */,
 				18D234BF1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib in Resources */,
+				1826CFCA1FB2E0100058E637 /* JWUserPhoneCheckViewController.xib in Resources */,
 				18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */,
 				18D234CD1EBB1C7B00BF855D /* JWTopicViewController.xib in Resources */,
 			);
@@ -326,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1826CFBD1FB2DFE40058E637 /* JWSysNotificationViewController.swift in Sources */,
 				18D234D11EBB1C9600BF855D /* JWUserCenterViewController.swift in Sources */,
 				184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */,
 				184B07D01FB15C7A00B7C016 /* JWTextField.swift in Sources */,
@@ -338,17 +437,30 @@
 				184B07CA1FB15C4800B7C016 /* JWLabel.swift in Sources */,
 				18D234C71EBB1C4700BF855D /* JWToolViewController.swift in Sources */,
 				18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */,
+				1826CFC51FB2E0030058E637 /* JWUserSettingViewController.swift in Sources */,
+				1826CFA11FB2DF620058E637 /* JWUserTopicViewController.swift in Sources */,
 				184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */,
 				18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */,
 				18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */,
+				1826CFB11FB2DFB30058E637 /* JWUserDynamicViewController.swift in Sources */,
 				18F122281EBC3D490060FBF5 /* JWTools.swift in Sources */,
 				18D234B51EBB033B00BF855D /* JWHomeTableViewCell.swift in Sources */,
 				1826CF951FB2B2CD0058E637 /* JWNaviBarButton.swift in Sources */,
+				1826CF9D1FB2DF490058E637 /* JWSignInViewController.swift in Sources */,
+				1826CFB91FB2DFCF0058E637 /* JWUserOrderViewController.swift in Sources */,
+				1826CF991FB2DD750058E637 /* JWUserIntegralViewController.swift in Sources */,
+				1826CFC11FB2DFF60058E637 /* JWUserMessageViewController.swift in Sources */,
 				18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */,
+				1826CFAD1FB2DF950058E637 /* JWUserFansViewController.swift in Sources */,
 				18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */,
 				18D234B01EBB024700BF855D /* JWHomeViewController.swift in Sources */,
+				1826CFCD1FB2E03E0058E637 /* JWUserEditViewController.swift in Sources */,
+				1826CFC91FB2E0100058E637 /* JWUserPhoneCheckViewController.swift in Sources */,
 				184B07CC1FB15C5700B7C016 /* JWButton.swift in Sources */,
+				1826CFA91FB2DF830058E637 /* JWIntegralShopViewController.swift in Sources */,
 				18D234CC1EBB1C7B00BF855D /* JWTopicViewController.swift in Sources */,
+				1826CFB51FB2DFC30058E637 /* JWUserCollectionViewController.swift in Sources */,
+				1826CFA51FB2DF700058E637 /* JWuserActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -462,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
