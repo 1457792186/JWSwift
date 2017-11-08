@@ -34,13 +34,13 @@ class JWBasicNaviViewController: UINavigationController {
         if self.viewControllers.count>0 {
             viewController.hidesBottomBarWhenPushed = true;
             
-            
+            viewController.navigationItem.leftBarButtonItem = JWNaviBarButton.initBackBarItem(forTarget: self, withAction: #selector(JWBasicNaviViewController.backBarButtonClick))
             
         }
         super.pushViewController(viewController, animated: animated);
     }
     
-    func backBarButtonClick() {
+    @objc func backBarButtonClick() {
         self.popViewController(animated: true)
     }
     
