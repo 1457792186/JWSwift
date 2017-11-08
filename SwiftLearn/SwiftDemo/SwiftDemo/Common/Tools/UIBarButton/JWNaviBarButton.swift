@@ -14,24 +14,24 @@ let naviItemFont : UIFont = UIFont.systemFont(ofSize: 14.0)
 class JWNaviBarButton: UIBarButtonItem {
     
 //   设置UIBarButtonItem
-    class func initBarItem(barImageName imageName : NSString , withBarSelImageName selImageName : NSString , withTitle title : NSString , withHorizontalAlignmentType alignment : UIControlContentHorizontalAlignment , withTarget target : Any , withAction action : Selector) -> JWNaviBarButton {
-        
-        return JWNaviBarButton.initBarItem(barImageName: imageName, withBarSelImageName: selImageName, withTitle: title, withHorizontalAlignmentType: alignment, withTarget: target, withAction: action, withWidth: 30.0)
-    }
-    
-//    设置UIBarButtonItem，自定义长度
-    class func initBarItem(barImageName imageName : NSString , withBarSelImageName selImageName : NSString , withTitle title : NSString , withHorizontalAlignmentType alignment : UIControlContentHorizontalAlignment , withTarget target : Any , withAction action : Selector , withWidth width : CGFloat) -> JWNaviBarButton {
-        
-        if imageName.isEqual(to: "") && selImageName.isEqual(to: "") && title.isEqual(to: "") {
-            return JWNaviBarButton.init();
-        }else if title.isEqual(to: ""){
-            
-        }else{
-            
-        }
-        
-        
-    }
+//    class func initBarItem(barImageName imageName : NSString , withBarSelImageName selImageName : NSString , withTitle title : NSString , withHorizontalAlignmentType alignment : UIControlContentHorizontalAlignment , withTarget target : Any , withAction action : Selector) -> JWNaviBarButton {
+//        
+//        return JWNaviBarButton.initBarItem(barImageName: imageName, withBarSelImageName: selImageName, withTitle: title, withHorizontalAlignmentType: alignment, withTarget: target, withAction: action, withWidth: 30.0)
+//    }
+//    
+////    设置UIBarButtonItem，自定义长度
+//    class func initBarItem(barImageName imageName : NSString , withBarSelImageName selImageName : NSString , withTitle title : NSString , withHorizontalAlignmentType alignment : UIControlContentHorizontalAlignment , withTarget target : Any , withAction action : Selector , withWidth width : CGFloat) -> JWNaviBarButton {
+//        
+//        if imageName.isEqual(to: "") && selImageName.isEqual(to: "") && title.isEqual(to: "") {
+//            return JWNaviBarButton.init();
+//        }else if title.isEqual(to: ""){
+//            
+//        }else{
+//            
+//        }
+//        
+//        
+//    }
     
 ////    设置UIBarButtonItem（返回按钮）
 //    class func initBackBarItem() -> JWNaviBarButton {
