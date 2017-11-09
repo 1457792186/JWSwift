@@ -21,6 +21,9 @@ let isNoRetina = UIScreen.instancesRespond(to: #selector(getter: UIScreen.curren
 let IPad = (UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad) ? true : false
 let IPod = (UIDevice.current.model as NSString) .isEqual(to: "iPod touch")
 
+let colorMain = JWTools.colorWithHexString(hex: "#52c4de")
+
+
 class JWSwiftConst: NSObject {
     
     @objc class func IPhone() -> Bool {
