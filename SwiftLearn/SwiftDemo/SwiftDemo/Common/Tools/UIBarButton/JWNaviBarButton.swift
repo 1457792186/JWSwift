@@ -9,7 +9,7 @@
 import UIKit
 
 let naviItemFont : UIFont = JWFontAdaptor.adjustFont(fixFont: UIFont.systemFont(ofSize: 14.0))
-let navTitleColor : UIColor = JWTools.colorWithHexString(hex: "#222222")
+let navTitleColor : UIColor = JWTools.colorWithHexString(hex: "#333333")
 
 class JWNaviBarButton: UIBarButtonItem {
     
