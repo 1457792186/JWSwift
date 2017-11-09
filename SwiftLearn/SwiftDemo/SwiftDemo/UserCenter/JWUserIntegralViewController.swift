@@ -150,7 +150,7 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
             
             for subIndex in 0..<dataSubArr.count {
                 let dataDic:[String:String] = dataSubArr[subIndex]
-//                let model = JWUserIntegralModel.yy_model(with: dataDic)!
+                let model = Mapper<JWUserIntegralModel>().mapDictionary(dataDic)
                 data.add(model)
             }
             integralData.add(data)

@@ -8,9 +8,19 @@
 
 import UIKit
 
-class JWUserIntegralDetailModel: NSObject {
+class JWUserIntegralDetailModel: NSObject,Mappable {
     var typeName:String?
     var addIntegral:String?
     var time:String?
+    
+    //    MARK: - ObjectMapper
+    required init?(_ map: Map) {
+        
+    }
+    func mapping(map: Map) {
+        typeName <- map["typeName"]
+        addIntegral <- map["addIntegral"]
+        time <- map["time"]
+    }
     
 }
