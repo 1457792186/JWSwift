@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="JWUserIntegralDetailTableHeader" id="iN0-l3-epB" customClass="JWUserIntegralDetailTableHeader" customModule="SwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKL-O9-g6S" customClass="JWLabel" customModule="SwiftDemo" customModuleProvider="target">
+                    <rect key="frame" x="15" y="15.5" width="35" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXe-DV-h5p" customClass="JWLabel" customModule="SwiftDemo" customModuleProvider="target">
+                    <rect key="frame" x="169.5" y="15.5" width="35" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-aI-v1k" customClass="JWLabel" customModule="SwiftDemo" customModuleProvider="target">
+                    <rect key="frame" x="325" y="15.5" width="35" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2Y-qO-2rS">
+                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.92538958787918091" green="0.92554813623428345" blue="0.92537957429885864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="r09-Dx-eaO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PKL-O9-g6S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0CA-a5-0TM"/>
+                <constraint firstAttribute="bottom" secondItem="j2Y-qO-2rS" secondAttribute="bottom" id="6G5-97-Ngj"/>
+                <constraint firstItem="EXe-DV-h5p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9bV-WP-7Q7"/>
+                <constraint firstItem="PKL-O9-g6S" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="J3W-sZ-eoa"/>
+                <constraint firstItem="EXe-DV-h5p" firstAttribute="centerY" secondItem="PKL-O9-g6S" secondAttribute="centerY" id="Rph-Nw-fsr"/>
+                <constraint firstAttribute="trailing" secondItem="YX4-aI-v1k" secondAttribute="trailing" constant="15" id="YsJ-DS-lPs"/>
+                <constraint firstAttribute="trailing" secondItem="j2Y-qO-2rS" secondAttribute="trailing" id="cN3-G9-cRV"/>
+                <constraint firstItem="j2Y-qO-2rS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="czS-Dr-5Qg"/>
+                <constraint firstItem="YX4-aI-v1k" firstAttribute="centerY" secondItem="PKL-O9-g6S" secondAttribute="centerY" id="joT-gj-JeJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-244.5" y="-405"/>
+        </view>
+    </objects>
+</document>

@@ -36,6 +36,18 @@
 		1826CFCA1FB2E0100058E637 /* JWUserPhoneCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFC81FB2E0100058E637 /* JWUserPhoneCheckViewController.xib */; };
 		1826CFCD1FB2E03E0058E637 /* JWUserEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFCB1FB2E03E0058E637 /* JWUserEditViewController.swift */; };
 		1826CFCE1FB2E03E0058E637 /* JWUserEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFCC1FB2E03E0058E637 /* JWUserEditViewController.xib */; };
+		184B02CF1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02CE1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift */; };
+		184B02D11FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02D01FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift */; };
+		184B02D31FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02D21FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift */; };
+		184B02D61FB4201F009BB7D4 /* JWUserIntegralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02D41FB4201F009BB7D4 /* JWUserIntegralTableViewCell.swift */; };
+		184B02D71FB4201F009BB7D4 /* JWUserIntegralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B02D51FB4201F009BB7D4 /* JWUserIntegralTableViewCell.xib */; };
+		184B02DA1FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02D81FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.swift */; };
+		184B02DB1FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B02D91FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.xib */; };
+		184B02DD1FB420AC009BB7D4 /* JWUserIntegralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02DC1FB420AC009BB7D4 /* JWUserIntegralModel.swift */; };
+		184B02DF1FB420BB009BB7D4 /* JWUserIntegralDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02DE1FB420BB009BB7D4 /* JWUserIntegralDetailModel.swift */; };
+		184B02E11FB420EA009BB7D4 /* JWUserIntegralTableFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B02E01FB420EA009BB7D4 /* JWUserIntegralTableFooter.xib */; };
+		184B02E31FB4212C009BB7D4 /* JWUserIntegralTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B02E21FB4212C009BB7D4 /* JWUserIntegralTableHeader.xib */; };
+		184B02E51FB42144009BB7D4 /* JWUserIntegralDetailTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B02E41FB42144009BB7D4 /* JWUserIntegralDetailTableHeader.xib */; };
 		184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */; };
 		184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */; };
 		184B07CA1FB15C4800B7C016 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B07C91FB15C4800B7C016 /* JWLabel.swift */; };
@@ -68,7 +80,7 @@
 		18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D234D51EBB1CBB00BF855D /* JWEntertainmentViewController.xib */; };
 		18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */; };
 		18F122281EBC3D490060FBF5 /* JWTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F122271EBC3D490060FBF5 /* JWTools.swift */; };
-		197E37B7925F1672172CC14B /* libPods-SwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A580373AAE1FCA03A196884D /* libPods-SwiftDemo.a */; };
+		DD52C6FD8D06069300AB1E9C /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7E9C23CC8BF2CAB7DB59E7 /* Pods_SwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +114,18 @@
 		1826CFCB1FB2E03E0058E637 /* JWUserEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserEditViewController.swift; sourceTree = "<group>"; };
 		1826CFCC1FB2E03E0058E637 /* JWUserEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserEditViewController.xib; sourceTree = "<group>"; };
 		182F15B51FB30879008D56C5 /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		184B02CE1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralTableHeader.swift; sourceTree = "<group>"; };
+		184B02D01FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralTableFooter.swift; sourceTree = "<group>"; };
+		184B02D21FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralDetailTableHeader.swift; sourceTree = "<group>"; };
+		184B02D41FB4201F009BB7D4 /* JWUserIntegralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralTableViewCell.swift; sourceTree = "<group>"; };
+		184B02D51FB4201F009BB7D4 /* JWUserIntegralTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserIntegralTableViewCell.xib; sourceTree = "<group>"; };
+		184B02D81FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralDetailTableViewCell.swift; sourceTree = "<group>"; };
+		184B02D91FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserIntegralDetailTableViewCell.xib; sourceTree = "<group>"; };
+		184B02DC1FB420AC009BB7D4 /* JWUserIntegralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralModel.swift; sourceTree = "<group>"; };
+		184B02DE1FB420BB009BB7D4 /* JWUserIntegralDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralDetailModel.swift; sourceTree = "<group>"; };
+		184B02E01FB420EA009BB7D4 /* JWUserIntegralTableFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserIntegralTableFooter.xib; sourceTree = "<group>"; };
+		184B02E21FB4212C009BB7D4 /* JWUserIntegralTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserIntegralTableHeader.xib; sourceTree = "<group>"; };
+		184B02E41FB42144009BB7D4 /* JWUserIntegralDetailTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserIntegralDetailTableHeader.xib; sourceTree = "<group>"; };
 		184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSwiftConst.swift; sourceTree = "<group>"; };
 		184B07C71FB158A900B7C016 /* JWFontAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWFontAdaptor.swift; sourceTree = "<group>"; };
 		184B07C91FB15C4800B7C016 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
@@ -137,8 +161,8 @@
 		18D234D81EBB26FC00BF855D /* JWHomeDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWHomeDetailsModel.swift; sourceTree = "<group>"; };
 		18F122271EBC3D490060FBF5 /* JWTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTools.swift; sourceTree = "<group>"; };
 		6E6BEC557064CE8B5B69CD7B /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		A580373AAE1FCA03A196884D /* libPods-SwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C769C33842D5474F8AD24A00 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DC7E9C23CC8BF2CAB7DB59E7 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				197E37B7925F1672172CC14B /* libPods-SwiftDemo.a in Frameworks */,
+				DD52C6FD8D06069300AB1E9C /* Pods_SwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +188,8 @@
 		182F15AE1FB3011C008D56C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				184B02DC1FB420AC009BB7D4 /* JWUserIntegralModel.swift */,
+				184B02DE1FB420BB009BB7D4 /* JWUserIntegralDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +199,10 @@
 			children = (
 				182F15B11FB3013B008D56C5 /* FooterView */,
 				182F15B01FB30133008D56C5 /* HeaderView */,
+				184B02D41FB4201F009BB7D4 /* JWUserIntegralTableViewCell.swift */,
+				184B02D51FB4201F009BB7D4 /* JWUserIntegralTableViewCell.xib */,
+				184B02D81FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.swift */,
+				184B02D91FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -180,6 +210,10 @@
 		182F15B01FB30133008D56C5 /* HeaderView */ = {
 			isa = PBXGroup;
 			children = (
+				184B02CE1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift */,
+				184B02E21FB4212C009BB7D4 /* JWUserIntegralTableHeader.xib */,
+				184B02D21FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift */,
+				184B02E41FB42144009BB7D4 /* JWUserIntegralDetailTableHeader.xib */,
 			);
 			path = HeaderView;
 			sourceTree = "<group>";
@@ -187,6 +221,8 @@
 		182F15B11FB3013B008D56C5 /* FooterView */ = {
 			isa = PBXGroup;
 			children = (
+				184B02D01FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift */,
+				184B02E01FB420EA009BB7D4 /* JWUserIntegralTableFooter.xib */,
 			);
 			path = FooterView;
 			sourceTree = "<group>";
@@ -372,7 +408,7 @@
 		3FA783A7BEA418DB0C7E4853 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A580373AAE1FCA03A196884D /* libPods-SwiftDemo.a */,
+				DC7E9C23CC8BF2CAB7DB59E7 /* Pods_SwiftDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -452,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D2349F1EBAFF6A00BF855D /* LaunchScreen.storyboard in Resources */,
+				184B02E31FB4212C009BB7D4 /* JWUserIntegralTableHeader.xib in Resources */,
 				18D234D21EBB1C9600BF855D /* JWUserCenterViewController.xib in Resources */,
 				1826CFCE1FB2E03E0058E637 /* JWUserEditViewController.xib in Resources */,
 				1826CFB21FB2DFB30058E637 /* JWUserDynamicViewController.xib in Resources */,
@@ -459,6 +496,7 @@
 				1826CFA21FB2DF620058E637 /* JWUserTopicViewController.xib in Resources */,
 				1826CFC61FB2E0030058E637 /* JWUserSettingViewController.xib in Resources */,
 				1826CFAE1FB2DF950058E637 /* JWUserFansViewController.xib in Resources */,
+				184B02DB1FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.xib in Resources */,
 				1826CFBE1FB2DFE40058E637 /* JWSysNotificationViewController.xib in Resources */,
 				18D234B61EBB033B00BF855D /* JWHomeTableViewCell.xib in Resources */,
 				18D234B11EBB024700BF855D /* JWHomeViewController.xib in Resources */,
@@ -468,9 +506,12 @@
 				18D234C31EBB136C00BF855D /* JWHomeDetailViewController.xib in Resources */,
 				18D234C81EBB1C4700BF855D /* JWToolViewController.xib in Resources */,
 				18D2349C1EBAFF6A00BF855D /* Assets.xcassets in Resources */,
+				184B02E11FB420EA009BB7D4 /* JWUserIntegralTableFooter.xib in Resources */,
 				1826CFAA1FB2DF830058E637 /* JWIntegralShopViewController.xib in Resources */,
 				1826CF9E1FB2DF490058E637 /* JWSignInViewController.xib in Resources */,
 				1826CF9A1FB2DD750058E637 /* JWUserIntegralViewController.xib in Resources */,
+				184B02D71FB4201F009BB7D4 /* JWUserIntegralTableViewCell.xib in Resources */,
+				184B02E51FB42144009BB7D4 /* JWUserIntegralDetailTableHeader.xib in Resources */,
 				18D234BF1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib in Resources */,
 				1826CFCA1FB2E0100058E637 /* JWUserPhoneCheckViewController.xib in Resources */,
 				18D234D71EBB1CBB00BF855D /* JWEntertainmentViewController.xib in Resources */,
@@ -542,17 +583,24 @@
 				18D234B91EBB0B8900BF855D /* JWHomeModel.swift in Sources */,
 				18D234A81EBB000E00BF855D /* JWBasicNaviViewController.swift in Sources */,
 				184B07CE1FB15C6C00B7C016 /* JWTextView.swift in Sources */,
+				184B02CF1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift in Sources */,
 				18D234C21EBB136C00BF855D /* JWHomeDetailViewController.swift in Sources */,
 				184B07CA1FB15C4800B7C016 /* JWLabel.swift in Sources */,
+				184B02DF1FB420BB009BB7D4 /* JWUserIntegralDetailModel.swift in Sources */,
+				184B02D61FB4201F009BB7D4 /* JWUserIntegralTableViewCell.swift in Sources */,
+				184B02DD1FB420AC009BB7D4 /* JWUserIntegralModel.swift in Sources */,
 				18D234C71EBB1C4700BF855D /* JWToolViewController.swift in Sources */,
 				18D234BE1EBB12EC00BF855D /* JWHomeCollectionViewCell.swift in Sources */,
 				1826CFC51FB2E0030058E637 /* JWUserSettingViewController.swift in Sources */,
+				184B02DA1FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.swift in Sources */,
 				1826CFA11FB2DF620058E637 /* JWUserTopicViewController.swift in Sources */,
 				184B07C41FB147BD00B7C016 /* JWSwiftConst.swift in Sources */,
 				18D234D91EBB26FC00BF855D /* JWHomeDetailsModel.swift in Sources */,
+				184B02D31FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift in Sources */,
 				18D234951EBAFF6A00BF855D /* AppDelegate.swift in Sources */,
 				1826CFB11FB2DFB30058E637 /* JWUserDynamicViewController.swift in Sources */,
 				18F122281EBC3D490060FBF5 /* JWTools.swift in Sources */,
+				184B02D11FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift in Sources */,
 				18D234B51EBB033B00BF855D /* JWHomeTableViewCell.swift in Sources */,
 				1826CF951FB2B2CD0058E637 /* JWNaviBarButton.swift in Sources */,
 				1826CF9D1FB2DF490058E637 /* JWSignInViewController.swift in Sources */,

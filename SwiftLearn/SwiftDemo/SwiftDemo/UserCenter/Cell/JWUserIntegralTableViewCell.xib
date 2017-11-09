@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="JWUserIntegralTableViewCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JWUserIntegralTableViewCell" customModule="SwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加分项目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFD-6d-aKw">
+                        <rect key="frame" x="15" y="12.5" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单次加分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5u-db-bHO">
+                        <rect key="frame" x="129.5" y="12.5" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="说明" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtI-nT-S89">
+                        <rect key="frame" x="258" y="12.5" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmf-De-9CE">
+                        <rect key="frame" x="15" y="42.5" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vih-xv-uEl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="M5u-db-bHO" firstAttribute="centerY" secondItem="VFD-6d-aKw" secondAttribute="centerY" id="2GB-Hr-Do7"/>
+                    <constraint firstAttribute="bottom" secondItem="fmf-De-9CE" secondAttribute="bottom" id="2uB-p8-UeM"/>
+                    <constraint firstItem="M5u-db-bHO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5xG-2V-mEg"/>
+                    <constraint firstItem="M5u-db-bHO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FEu-EZ-cej"/>
+                    <constraint firstItem="xtI-nT-S89" firstAttribute="centerY" secondItem="VFD-6d-aKw" secondAttribute="centerY" id="IvG-GH-mqI"/>
+                    <constraint firstItem="VFD-6d-aKw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="WtA-yM-xBv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xtI-nT-S89" secondAttribute="trailing" constant="15" id="vwP-1X-EI6"/>
+                    <constraint firstItem="fmf-De-9CE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="w8c-Au-CLM"/>
+                    <constraint firstAttribute="trailing" secondItem="fmf-De-9CE" secondAttribute="trailing" constant="15" id="ynM-hj-aRC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addIntegralLabel" destination="M5u-db-bHO" id="mwN-6h-fZN"/>
+                <outlet property="bottomLineView" destination="fmf-De-9CE" id="hmL-7H-SFc"/>
+                <outlet property="introduceLabel" destination="xtI-nT-S89" id="KAQ-aU-QWL"/>
+                <outlet property="nameLabel" destination="VFD-6d-aKw" id="c2o-Bu-moV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

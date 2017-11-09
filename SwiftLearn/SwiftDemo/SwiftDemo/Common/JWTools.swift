@@ -10,6 +10,8 @@ import UIKit
 
 class JWTools: NSObject {
     
+    
+    //    MARK: - HUD
     /*
      *显示Hud
      *hudStr:显示的文本
@@ -46,6 +48,8 @@ class JWTools: NSObject {
         }
     }
     
+    
+    //    MARK: - Font&String
     /*
      *获取Label高度
      *label:计算的Label
@@ -66,6 +70,25 @@ class JWTools: NSObject {
         return labelFrame;
     }
     
+    /*
+     *文本添加行间距
+     *fontSize:文本大小
+     *lineSpacing:文本行间距
+     *str:显示文本
+     */
+    @objc class func stringWithLineEndgeSet(forFontSize fontSize: CGFloat,withLineSpacing lineSpacing: CGFloat,withString str:String) -> NSAttributedString {
+        //        行间距
+        let paragraphStyle = NSMutableParagraphStyle.init()
+        paragraphStyle.lineSpacing = lineSpacing
+        
+        let attributes = [NSAttributedStringKey.font : JWFontAdaptor.adjustFont(fixFontSize: fontSize),NSAttributedStringKey.paragraphStyle : paragraphStyle]
+        let attributeString = NSAttributedString.init(string: str, attributes: attributes)
+        return attributeString;
+    }
+    
+    
+    
+    //    MARK: - UICOlor
     /*
      HexString转成Color
      */
@@ -101,5 +124,18 @@ class JWTools: NSObject {
         
         return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
     }
+    
+    
+    //    MARK: - UIView
+    /*
+     *设置边框
+     */
+    @objc class func viewSetBorder(borderWidth:CGFloat,borderColor:String,cornerRadius:CGFloat,withView view:UIView) {
+        view.layer.borderWidth = borderWidth
+        view.layer.borderColor = JWTools.colorWithHexString(hex: borderColor).cgColor
+        view.layer.cornerRadius = cornerRadius
+        view.layer.masksToBounds = true
+    }
+    
     
 }

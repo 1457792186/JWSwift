@@ -3,6 +3,5 @@
 //
 
 #import "MJRefresh.h"
-#import "YYModel.h"
 
 #import "AFNetworking.h"

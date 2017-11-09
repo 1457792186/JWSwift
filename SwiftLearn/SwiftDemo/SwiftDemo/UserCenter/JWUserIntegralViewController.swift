@@ -13,9 +13,16 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     @IBOutlet weak var integralTableView: UITableView!
     @IBOutlet weak var detailTableView: UITableView!
     
-    var detailPage = 0
+    var integralData:NSMutableArray = NSMutableArray()
+    var detailPage:Int = 0
     var detailData:NSMutableArray = NSMutableArray()
     var isDetail:Bool = false
+    
+    let integralTableHeader = "JWUserIntegralTableHeader"
+    let integralTableFooter = "JWUserIntegralTableFooter"
+    let integralTableCell   = "JWUserIntegralTableViewCell"
+    let detailTableHeader   = "JWUserIntegralDetailTableHeader"
+    let detailTableCell     = "JWUserIntegralDetailTableViewCell"
     
     let integralBtn = UIButton.init(frame: CGRect.init(x: mainScreenWidth/2.0 - 71.0, y: 7.0, width: 70.0, height: 30.0))
     let detailBtn = UIButton.init(frame: CGRect.init(x: mainScreenWidth/2.0 + 1.0, y: 7.0, width: 70.0, height: 30.0))
@@ -26,6 +33,11 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
         super.viewDidLoad()
 
         self.prepareUI()
+        self.prepareTable()
+        
+        self.setRefreshFunction()
+        self.requestIntegralData()
+        self.requestIntegralDetailData(isHeader: true)
     }
     
     func prepareUI() {
@@ -35,7 +47,7 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
         integralBtn.setTitleColor(colorMain, for: UIControlState.selected)
         integralBtn.titleLabel?.font = JWFontAdaptor.adjustFont(fixFont: UIFont.systemFont(ofSize: 15.0))
         integralBtn.addTarget(self, action: #selector(JWUserIntegralViewController.viewTypeChangeBtnAction(sender:)), for: UIControlEvents.touchUpInside)
-        self.navigationController?.navigationBar.addSubview(integralBtn)
+        self.navigationController?.navigationBar .addSubview(integralBtn)
         
         detailBtn.setTitle("详情", for: UIControlState.normal)
         detailBtn.setTitleColor(navTitleColor, for: UIControlState.normal)
@@ -54,7 +66,15 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
         
         self.viewTypeChangeBtnAction(sender: integralBtn)
         
+    }
+    
+    func prepareTable() {
+        self.integralTableView.register(UINib(nibName: integralTableCell, bundle: nil), forCellReuseIdentifier: integralTableCell)
+        self.integralTableView.register(UINib.init(nibName: integralTableHeader, bundle: nil), forHeaderFooterViewReuseIdentifier: integralTableHeader)
+        self.integralTableView.register(UINib.init(nibName: integralTableFooter, bundle: nil), forHeaderFooterViewReuseIdentifier: integralTableFooter)
         
+        self.detailTableView.register(UINib(nibName: detailTableCell, bundle: nil), forCellReuseIdentifier: detailTableCell)
+        self.detailTableView.register(UINib.init(nibName: detailTableHeader, bundle: nil), forHeaderFooterViewReuseIdentifier: detailTableHeader)
     }
     
 //    点击类型切换按钮
@@ -74,9 +94,17 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     
     
     //    MARK: - UITableViewDataSource
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        if tableView.isEqual(self.integralTableView) {
+            return (integralData[section] as! NSArray).count
+        }else{
+            return detailData.count
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int{
         
-        return 0;
+        return tableView.isEqual(self.integralTableView) ? 1 : 2;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -86,4 +114,67 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     
     //    MARK: - UITableViewDelegate
     
+    
+    //    MARK: - MJRefresh
+    func setRefreshFunction() {
+        self.integralTableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+            self.requestIntegralData()
+        })
+        
+        self.detailTableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+            self.requestIntegralDetailData(isHeader:true)
+        })
+        
+        self.detailTableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
+            self.requestIntegralDetailData(isHeader:false)
+        })
+    }
+    
+    
+    //    MARK: - RequestData
+    func requestIntegralData() {
+        let dataArr = [
+            [
+                ["typeName":"今日签到","addIntegral":"10","introduce":"累计加分"],
+                ["typeName":"发表帖子","addIntegral":"10","introduce":""],
+                ["typeName":"回复","addIntegral":"2","introduce":""]
+            ],
+            [
+                ["typeName":"孕期账号注册","addIntegral":"100","introduce":"累计加分"],
+                ["typeName":"完善个人资料","addIntegral":"50","introduce":""],
+            ]]
+        
+        for index in 0..<dataArr.count {
+            let dataSubArr = dataArr[index]
+            let data = NSMutableArray()
+            
+            for subIndex in 0..<dataSubArr.count {
+                let dataDic:[String:String] = dataSubArr[subIndex]
+//                let model = JWUserIntegralModel.yy_model(with: dataDic)!
+                data.add(model)
+            }
+            integralData.add(data)
+        }
+        
+        
+        //重现加载表格数据
+        self.integralTableView!.reloadData()
+        //结束刷新
+        self.integralTableView!.mj_header.endRefreshing()
+    }
+    
+    func requestIntegralDetailData(isHeader:Bool) {
+        
+        
+        
+        //重现加载表格数据
+        self.detailTableView!.reloadData()
+        //结束刷新
+        if isHeader {
+            self.detailTableView!.mj_header.endRefreshing()
+        }else{
+            self.detailTableView!.mj_footer.endRefreshing()
+        }
+        
+    }
 }

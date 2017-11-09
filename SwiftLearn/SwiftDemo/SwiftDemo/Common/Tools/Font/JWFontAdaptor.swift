@@ -12,7 +12,7 @@ let IPHONE5_INCREMENT : CGFloat = 0.0
 
 let IPHONE6_INCREMENT : CGFloat = 0.0
 
-let IPHONE6PLUS_INCREMENT : CGFloat = 2.0
+let IPHONE6PLUS_INCREMENT : CGFloat = 0.0
 
 
 class JWFontAdaptor: NSObject {
@@ -29,5 +29,10 @@ class JWFontAdaptor: NSObject {
         }
         
         return newFont;
+    }
+    
+    @objc class func adjustFont(fixFontSize fontSize : CGFloat) -> UIFont {
+        
+        return JWFontAdaptor.adjustFont(fixFont: UIFont.systemFont(ofSize: fontSize));
     }
 }
