@@ -38,14 +38,11 @@ class JWUserCenterViewController: JWBasicViewController {
     @objc func prepareUI() {
 //        基视图高度适配
         let mainViewHeight = mainScreenHeight - JWSwiftConst.NaviBarHeight() - JWSwiftConst.TabBarHeight()
-        var baseViewHeight : CGFloat = mainViewHeight;
-        
-        if mainViewHeight <= 600 {
-            baseViewHeight = 600.0;
-        }
+        let baseViewHeight : CGFloat = mainViewHeight <= 600 ? 600.0 : 10.0;
         
         self.baseScrollView.contentSize = CGSize.init(width: mainScreenWidth, height: baseViewHeight)
-        self.baseViewHeight.constant = baseViewHeight;
+        self.baseScrollView.alwaysBounceVertical = true
+        self.baseViewHeight.constant = 600.0;
         self.view.updateConstraints();
         
 //        控件设置
