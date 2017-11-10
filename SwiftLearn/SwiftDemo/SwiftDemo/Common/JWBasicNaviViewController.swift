@@ -23,11 +23,16 @@ class JWBasicNaviViewController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //此处修改底部线条颜色
+        self.navigationBar.setBackgroundImage(UIImage.init(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
+        self.navigationBar.shadowImage = JWTools.imageWithColor(color: JWTools.colorWithHexString(hex: "#ececec"))
+        
         self.navigationBar.tintColor = UIColor.white;
         self.navigationBar.barTintColor = UIColor.white;
         self.navigationBar.isTranslucent = false;
         self.navigationBar.titleTextAttributes = [NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 20),NSAttributedStringKey.foregroundColor:UIColor.black];
+        
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

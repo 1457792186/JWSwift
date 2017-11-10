@@ -6,9 +6,10 @@
 //  Copyright © 2017年 UgoMedia. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class JWUserIntegralModel: Mappable {
+class JWUserIntegralModel: NSObject,Mappable {
     var typeName: String?
     var addIntegral: String?
     var introduce: String?
@@ -42,5 +43,12 @@ class JWUserIntegralModel: Mappable {
 //        friends     <- map["friends"]
 //        birthday    <- (map["birthday"], DateTransform())
 //    }
+    
+    class func initModel(dataDic:NSDictionary) -> JWUserIntegralModel {
+        let dataJSON = JWTools.getJSONStringFromDictionary(dictionary: dataDic as NSDictionary)
+//        let model:[JWUserIntegralModel] = Mapper<JWUserIntegralModel>().mapArray(JSONString: dataJSON as String)!
+        let model = Mapper<JWUserIntegralModel>().map(JSONString: dataJSON as String)
+        return model!
+    }
     
 }

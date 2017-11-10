@@ -23,7 +23,7 @@ class JWUserIntegralTableFooter: UITableViewHeaderFooterView {
     func prepareUI() {
         self.detailIntroduceLabel.attributedText = JWTools.stringWithLineEndgeSet(forFontSize: self.detailIntroduceLabel.font.pointSize,withLineSpacing : 14.0,withString :"1.可以在社区提问给予专家积分\n2.可以在兑换专区兑换礼品")
         
-        JWTools.viewSetBorder(borderWidth: 1.0, borderColor: "#ececec", cornerRadius: 10.0, withView: borderView)
+        JWTools.viewSetBorder(borderWidth: 1.0, borderColor: "#ececec", cornerRadius: 15.0, withView: borderView)
         
     }
     

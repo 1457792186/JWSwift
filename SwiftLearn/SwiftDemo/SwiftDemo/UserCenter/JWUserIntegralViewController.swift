@@ -32,12 +32,24 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.prepareUI()
         self.prepareTable()
+        self.prepareUI()
         
         self.setRefreshFunction()
         self.requestIntegralData()
         self.requestIntegralDetailData(isHeader: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        integralBtn.isHidden = false
+        detailBtn.isHidden = false
+        chooseSliderView.isHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        integralBtn.isHidden = true
+        detailBtn.isHidden = true
+        chooseSliderView.isHidden = true
     }
     
     func prepareUI() {
@@ -69,6 +81,7 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     }
     
     func prepareTable() {
+        
         self.integralTableView.register(UINib(nibName: integralTableCell, bundle: nil), forCellReuseIdentifier: integralTableCell)
         self.integralTableView.register(UINib.init(nibName: integralTableHeader, bundle: nil), forHeaderFooterViewReuseIdentifier: integralTableHeader)
         self.integralTableView.register(UINib.init(nibName: integralTableFooter, bundle: nil), forHeaderFooterViewReuseIdentifier: integralTableFooter)
@@ -87,8 +100,8 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
             self.chooseSliderView.center = CGPoint.init(x: (self.integralBtn.isSelected ? self.integralBtn.center.x : self.detailBtn.center.x), y: self.chooseSliderView.center.y)
         }
         
-        integralTableView.isHidden = integralBtn.isSelected
-        detailTableView.isHidden = detailBtn.isSelected
+        integralTableView.isHidden = !integralBtn.isSelected
+        detailTableView.isHidden = !detailBtn.isSelected
         
     }
     
@@ -96,7 +109,7 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     //    MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         if tableView.isEqual(self.integralTableView) {
-            return (integralData[section] as! NSArray).count
+            return (integralData[section] as! NSArray).count + 1
         }else{
             return detailData.count
         }
@@ -104,15 +117,73 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     
     func numberOfSections(in tableView: UITableView) -> Int{
         
-        return tableView.isEqual(self.integralTableView) ? 1 : 2;
+        return tableView.isEqual(self.integralTableView) ? 2 : 1;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView.isEqual(self.integralTableView) {
+            let integralCell = tableView.dequeueReusableCell(withIdentifier: integralTableCell, for: indexPath) as! JWUserIntegralTableViewCell
+            if indexPath.row == 0{
+                integralCell.setTopStyle()
+            }else{
+                let model = (integralData[indexPath.section] as! NSArray)[indexPath.row - 1]
+                integralCell.setData(dataModel: model as! JWUserIntegralModel)
+            }
+            
+            return integralCell
+        }
         
-        return UITableViewCell.init();
+        let detailCell = tableView.dequeueReusableCell(withIdentifier: detailTableCell, for: indexPath) as! JWUserIntegralDetailTableViewCell
+        let model = self.detailData[indexPath.row] as! JWUserIntegralDetailModel
+        detailCell .setData(dataModel: model)
+        
+        return detailCell
     }
     
     //    MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+        
+        return tableView.isEqual(self.integralTableView) ? (indexPath.row == 0 ? 40.0 : 44.0) : 44.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
+        
+        return tableView.isEqual(self.integralTableView) ? 50.0 : 44.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat{
+        
+        return tableView.isEqual(self.integralTableView) ? (section == 0 ? 12.0 : 152.0) : 0.0001
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
+        
+        if tableView.isEqual(self.integralTableView) {
+            let integralHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: integralTableHeader) as! JWUserIntegralTableHeader
+            integralHeaderView.nameLabel.text = section == 0 ? "每日奖励积分规则" : "一次性奖励积分规则"
+            return integralHeaderView
+        }else{
+            let detailHeader = tableView.dequeueReusableHeaderFooterView(withIdentifier: detailTableHeader) as! JWUserIntegralDetailTableHeader
+            return detailHeader
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView?{
+        
+        if tableView.isEqual(self.integralTableView) {
+            if section == 0 {
+                let footerView = UIView.init(frame: CGRect.init(x: 0.0, y: 0.0, width: mainScreenWidth, height: 12.0))
+                footerView.backgroundColor = JWTools.colorWithHexString(hex: "#f5f5f5")
+                return footerView
+            }else{
+                let integralFooterView = tableView.dequeueReusableHeaderFooterView(withIdentifier: integralTableFooter)
+                return integralFooterView
+            }
+            
+        }else{
+            return nil
+        }
+    }
     
     
     //    MARK: - MJRefresh
@@ -132,6 +203,7 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
     
     
     //    MARK: - RequestData
+//    请求积分数据
     func requestIntegralData() {
         let dataArr = [
             [
@@ -142,17 +214,17 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
             [
                 ["typeName":"孕期账号注册","addIntegral":"100","introduce":"累计加分"],
                 ["typeName":"完善个人资料","addIntegral":"50","introduce":""],
-            ]]
+            ]
+        ]
         
         for index in 0..<dataArr.count {
             let dataSubArr = dataArr[index]
             let data = NSMutableArray()
             
             for subIndex in 0..<dataSubArr.count {
-                let dataDic:[String:String] = dataSubArr[subIndex]
-                let dataJSON = JWTools.getJSONStringFromDictionary(dictionary: dataDic as NSDictionary)
-                let model:[JWUserIntegralModel] = Mapper<JWUserIntegralModel>().mapArray(JSONString: dataJSON)!
-//                let model = Mapper<JWUserIntegralModel>().map(JSONString: dataJSON)
+                let dataDic = dataSubArr[subIndex]
+                let model = JWUserIntegralModel.initModel(dataDic: dataDic as NSDictionary)
+                
                 data.add(model)
             }
             integralData.add(data)
@@ -165,9 +237,37 @@ class JWUserIntegralViewController: UIViewController,UITableViewDelegate,UITable
         self.integralTableView!.mj_header.endRefreshing()
     }
     
+//    请求详情数据
     func requestIntegralDetailData(isHeader:Bool) {
+        let dataArr = [
+                ["typeName":"今日签到","addIntegral":"10","time":"1510296376"],
+                ["typeName":"发表帖子","addIntegral":"10","time":"1508150376"],
+                ["typeName":"回复","addIntegral":"2","time":"1508200376"],
+                ["typeName":"今日签到","addIntegral":"10","time":"1508220376"],
+                ["typeName":"发表帖子","addIntegral":"10","time":"1508400376"],
+                ["typeName":"回复","addIntegral":"2","time":"1508600376"],
+                ["typeName":"今日签到","addIntegral":"10","time":"1508606376"],
+                ["typeName":"发表帖子","addIntegral":"10","time":"1509006376"],
+                ["typeName":"回复","addIntegral":"2","time":"1509096376"],
+                ["typeName":"今日签到","addIntegral":"10","time":"1509296376"],
+                ["typeName":"发表帖子","addIntegral":"10","time":"1510096376"],
+                ["typeName":"回复","addIntegral":"2","time":"1500296376"]
+        ]
         
+//        下拉刷新重置
+        if isHeader {
+            self.detailPage = 0
+            detailData.removeAllObjects()
+        }
         
+        for index in 0..<dataArr.count {
+            let dataDic = dataArr[index]
+            let model = JWUserIntegralDetailModel.initModel(dataDic: dataDic as NSDictionary)
+            
+            detailData.add(model)
+        }
+        
+        self.detailPage += 1
         
         //重现加载表格数据
         self.detailTableView!.reloadData()

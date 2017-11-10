@@ -10,7 +10,6 @@ import UIKit
 
 class JWTools: NSObject {
     
-    
     //    MARK: - HUD
     /*
      *显示Hud
@@ -137,6 +136,20 @@ class JWTools: NSObject {
         view.layer.masksToBounds = true
     }
     
+    /*
+     *线条图片
+     */
+    @objc class func imageWithColor(color:UIColor) -> UIImage{
+        let rect = CGRect.init(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context!.setFillColor(color.cgColor)
+        context!.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
+    
     //    MARK: - JSON
     /*
      *JSONString转换为字典
@@ -164,6 +177,91 @@ class JWTools: NSObject {
         let JSONString = NSString(data:data as Data,encoding: String.Encoding.utf8.rawValue)
         return JSONString!
     }
+    
+    //    MARK: - Date
+    /*
+     *传一个日期字符串，判断是否是昨天，或者是今天的日期
+     */
+    @objc class func dateStr(dayCheck dateStr:String) ->String{
+        let dateFormatter = DateFormatter.init()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let date = Date.init(timeIntervalSince1970: (dateStr as NSString).doubleValue)
+        
+        let calendar = NSCalendar.current
+        
+        
+        if calendar.isDateInYesterday(date) {
+            dateFormatter.dateFormat = "HH:mm:ss"
+            return NSString.init(format: "昨天 %@", dateFormatter.string(from: date)) as String
+        }else if calendar.isDateInToday(date) {
+            dateFormatter.dateFormat = "HH:mm:ss"
+            return NSString.init(format: "今天 %@", dateFormatter.string(from: date)) as String
+        }else{
+            dateFormatter.dateFormat = "MM-dd HH:mm:ss"
+            return dateFormatter.string(from: date)
+        }
+        
+    }
+    
+    /*
+     *传一个日期字符串，判断是否是昨天，或者是多少小时、分钟前
+     */
+    @objc class func dateWithStr(timeCheck dateStr:String) ->String{
+        let dateFormatter = DateFormatter.init()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let date = Date.init(timeIntervalSince1970: (dateStr as NSString).doubleValue)
+        
+        let calendar = NSCalendar.current
+        
+        
+        if calendar.isDateInYesterday(date) {
+            dateFormatter.dateFormat = "HH:mm:ss"
+            return NSString.init(format: "昨天 %@", dateFormatter.string(from: date)) as String
+        }else if calendar.isDateInToday(date) {
+            dateFormatter.dateFormat = "HH";
+            var time = (dateFormatter.string(from: date) as NSString).integerValue
+            var timeCurrent = (dateFormatter.string(from: Date.init(timeIntervalSince1970: 0)) as NSString).integerValue
+            if timeCurrent - time == 1{
+                dateFormatter.dateFormat = "mm";
+                time = (dateFormatter.string(from: date) as NSString).integerValue
+                timeCurrent = (dateFormatter.string(from: Date.init(timeIntervalSince1970: 0)) as NSString).integerValue
+                
+                if timeCurrent - time >= 0{
+                    return "1小时前"
+                }
+                
+                return NSString.init(format: "%zi分钟前", timeCurrent - time + 60) as String
+            }else if timeCurrent - time == 0{
+                dateFormatter.dateFormat = "mm";
+                time = (dateFormatter.string(from: date) as NSString).integerValue
+                timeCurrent = (dateFormatter.string(from: Date.init(timeIntervalSince1970: 0)) as NSString).integerValue
+                
+                return NSString.init(format: "%zi分钟前", timeCurrent - time) as String
+            }
+            
+            return NSString.init(format: "%zi小时前", dateFormatter.string(from: date)) as String
+        }else{
+            dateFormatter.dateFormat = "MM-dd HH:mm:ss"
+            return dateFormatter.string(from: date)
+        }
+        
+    }
+    
+    /*
+     *传一个日期字符串，返回年月日
+     */
+    @objc class func dateStr(commonDate dateStr:String) ->String{
+        let dateFormatter = DateFormatter.init()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = Date.init(timeIntervalSince1970: (dateStr as NSString).doubleValue)
+        
+        
+        return dateFormatter.string(from: date)
+        
+    }
+    
     
     
 }

@@ -15,6 +15,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K0-Wg-BwL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKL-O9-g6S" customClass="JWLabel" customModule="SwiftDemo" customModuleProvider="target">
                     <rect key="frame" x="15" y="15.5" width="35" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -41,16 +45,19 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="PKL-O9-g6S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0CA-a5-0TM"/>
+                <constraint firstAttribute="trailing" secondItem="9K0-Wg-BwL" secondAttribute="trailing" id="1hz-44-JkA"/>
                 <constraint firstAttribute="bottom" secondItem="j2Y-qO-2rS" secondAttribute="bottom" id="6G5-97-Ngj"/>
                 <constraint firstItem="EXe-DV-h5p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9bV-WP-7Q7"/>
                 <constraint firstItem="PKL-O9-g6S" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="J3W-sZ-eoa"/>
                 <constraint firstItem="EXe-DV-h5p" firstAttribute="centerY" secondItem="PKL-O9-g6S" secondAttribute="centerY" id="Rph-Nw-fsr"/>
+                <constraint firstItem="9K0-Wg-BwL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TCM-0t-rC5"/>
+                <constraint firstItem="9K0-Wg-BwL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wo2-8s-xhk"/>
                 <constraint firstAttribute="trailing" secondItem="YX4-aI-v1k" secondAttribute="trailing" constant="15" id="YsJ-DS-lPs"/>
                 <constraint firstAttribute="trailing" secondItem="j2Y-qO-2rS" secondAttribute="trailing" id="cN3-G9-cRV"/>
                 <constraint firstItem="j2Y-qO-2rS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="czS-Dr-5Qg"/>
+                <constraint firstAttribute="bottom" secondItem="9K0-Wg-BwL" secondAttribute="bottom" id="iap-46-byd"/>
                 <constraint firstItem="YX4-aI-v1k" firstAttribute="centerY" secondItem="PKL-O9-g6S" secondAttribute="centerY" id="joT-gj-JeJ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

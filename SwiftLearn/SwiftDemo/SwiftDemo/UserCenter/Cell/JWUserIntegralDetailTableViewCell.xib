@@ -57,6 +57,7 @@
                     <constraint firstItem="iID-wq-09M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="olD-Yw-idb"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="addIntegralLabel" destination="ZqA-c2-lJ4" id="Df2-aR-pS6"/>
                 <outlet property="timeLabel" destination="9V9-03-2Z7" id="sgz-7G-Kwb"/>

@@ -230,7 +230,6 @@
 		184B07BF1FB146A900B7C016 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */,
 				182F15B51FB30879008D56C5 /* SwiftDemo-Bridging-Header.h */,
 			);
 			path = SupportFiles;
@@ -239,6 +238,8 @@
 		184B07C51FB1583300B7C016 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				184B07C31FB147BD00B7C016 /* JWSwiftConst.swift */,
+				18F122271EBC3D490060FBF5 /* JWTools.swift */,
 				1826CF931FB2B28C0058E637 /* UIBarButton */,
 				184B07C61FB1588C00B7C016 /* Font */,
 			);
@@ -300,7 +301,6 @@
 				18D234A71EBB000E00BF855D /* JWBasicNaviViewController.swift */,
 				18D234A91EBB002A00BF855D /* JWBasicTabBarViewController.swift */,
 				18D234AB1EBB003E00BF855D /* JWBasicViewController.swift */,
-				18F122271EBC3D490060FBF5 /* JWTools.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
