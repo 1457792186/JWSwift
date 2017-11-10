@@ -6,21 +6,21 @@
 //  Copyright © 2017年 UgoMedia. All rights reserved.
 //
 
-import UIKit
+import ObjectMapper
 
-class JWUserIntegralDetailModel: NSObject,Mappable {
-    var typeName:String?
-    var addIntegral:String?
-    var time:String?
+class JWUserIntegralDetailModel: Mappable {
+    var typeName: String?
+    var addIntegral: String?
+    var time: String?
     
     //    MARK: - ObjectMapper
-    required init?(_ map: Map) {
+    required init?(map: Map) {
         
     }
+    
     func mapping(map: Map) {
         typeName <- map["typeName"]
         addIntegral <- map["addIntegral"]
         time <- map["time"]
     }
-    
 }

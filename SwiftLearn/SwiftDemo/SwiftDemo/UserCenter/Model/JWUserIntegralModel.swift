@@ -6,12 +6,12 @@
 //  Copyright © 2017年 UgoMedia. All rights reserved.
 //
 
-import UIKit
+import ObjectMapper
 
-class JWUserIntegralModel: NSObject,Mappable {
-    var typeName:String?
-    var addIntegral:String?
-    var introduce:String?
+class JWUserIntegralModel: Mappable {
+    var typeName: String?
+    var addIntegral: String?
+    var introduce: String?
     
 //    var username: String?
 //    var age: Int?
@@ -23,7 +23,7 @@ class JWUserIntegralModel: NSObject,Mappable {
 //    var birthday: NSDate?
     
     //    MARK: - ObjectMapper
-    required init?(_ map: Map) {
+    required init?(map: Map) {
         
     }
     func mapping(map: Map) {

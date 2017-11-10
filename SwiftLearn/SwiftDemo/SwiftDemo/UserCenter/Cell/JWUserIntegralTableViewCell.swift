@@ -16,7 +16,7 @@ class JWUserIntegralTableViewCell: UITableViewCell {
     
     @IBOutlet weak var bottomLineView: UIView!
     
-    var model:JWUserIntegralModel = JWUserIntegralModel.init()
+    var model:JWUserIntegralModel!
     
     
     override func awakeFromNib() {

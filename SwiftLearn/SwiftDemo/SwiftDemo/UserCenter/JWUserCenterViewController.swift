@@ -79,7 +79,7 @@ class JWUserCenterViewController: JWBasicViewController {
         case 102:
             pushVC = JWUserTopicViewController()
         case 103:
-            pushVC = JWuserActivityViewController()
+            pushVC = JWUserActivityViewController()
         case 104:
             pushVC = JWIntegralShopViewController()
         case 201:

@@ -14,7 +14,7 @@ class JWUserIntegralDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var addIntegralLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
-    var model:JWUserIntegralDetailModel = JWUserIntegralDetailModel.init()
+    var model:JWUserIntegralDetailModel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

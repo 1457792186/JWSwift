@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JWuserActivityViewController: UIViewController {
+class JWUserActivityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

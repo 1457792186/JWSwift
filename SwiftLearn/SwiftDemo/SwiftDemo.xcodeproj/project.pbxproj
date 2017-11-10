@@ -14,8 +14,8 @@
 		1826CF9E1FB2DF490058E637 /* JWSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CF9C1FB2DF490058E637 /* JWSignInViewController.xib */; };
 		1826CFA11FB2DF620058E637 /* JWUserTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF9F1FB2DF620058E637 /* JWUserTopicViewController.swift */; };
 		1826CFA21FB2DF620058E637 /* JWUserTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFA01FB2DF620058E637 /* JWUserTopicViewController.xib */; };
-		1826CFA51FB2DF700058E637 /* JWuserActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFA31FB2DF700058E637 /* JWuserActivityViewController.swift */; };
-		1826CFA61FB2DF700058E637 /* JWuserActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFA41FB2DF700058E637 /* JWuserActivityViewController.xib */; };
+		1826CFA51FB2DF700058E637 /* JWUserActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFA31FB2DF700058E637 /* JWUserActivityViewController.swift */; };
+		1826CFA61FB2DF700058E637 /* JWUserActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFA41FB2DF700058E637 /* JWUserActivityViewController.xib */; };
 		1826CFA91FB2DF830058E637 /* JWIntegralShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFA71FB2DF830058E637 /* JWIntegralShopViewController.swift */; };
 		1826CFAA1FB2DF830058E637 /* JWIntegralShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFA81FB2DF830058E637 /* JWIntegralShopViewController.xib */; };
 		1826CFAD1FB2DF950058E637 /* JWUserFansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFAB1FB2DF950058E637 /* JWUserFansViewController.swift */; };
@@ -91,8 +91,8 @@
 		1826CF9C1FB2DF490058E637 /* JWSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWSignInViewController.xib; sourceTree = "<group>"; };
 		1826CF9F1FB2DF620058E637 /* JWUserTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserTopicViewController.swift; sourceTree = "<group>"; };
 		1826CFA01FB2DF620058E637 /* JWUserTopicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserTopicViewController.xib; sourceTree = "<group>"; };
-		1826CFA31FB2DF700058E637 /* JWuserActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWuserActivityViewController.swift; sourceTree = "<group>"; };
-		1826CFA41FB2DF700058E637 /* JWuserActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWuserActivityViewController.xib; sourceTree = "<group>"; };
+		1826CFA31FB2DF700058E637 /* JWUserActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserActivityViewController.swift; sourceTree = "<group>"; };
+		1826CFA41FB2DF700058E637 /* JWUserActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserActivityViewController.xib; sourceTree = "<group>"; };
 		1826CFA71FB2DF830058E637 /* JWIntegralShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWIntegralShopViewController.swift; sourceTree = "<group>"; };
 		1826CFA81FB2DF830058E637 /* JWIntegralShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWIntegralShopViewController.xib; sourceTree = "<group>"; };
 		1826CFAB1FB2DF950058E637 /* JWUserFansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserFansViewController.swift; sourceTree = "<group>"; };
@@ -374,8 +374,8 @@
 				1826CF9C1FB2DF490058E637 /* JWSignInViewController.xib */,
 				1826CF9F1FB2DF620058E637 /* JWUserTopicViewController.swift */,
 				1826CFA01FB2DF620058E637 /* JWUserTopicViewController.xib */,
-				1826CFA31FB2DF700058E637 /* JWuserActivityViewController.swift */,
-				1826CFA41FB2DF700058E637 /* JWuserActivityViewController.xib */,
+				1826CFA31FB2DF700058E637 /* JWUserActivityViewController.swift */,
+				1826CFA41FB2DF700058E637 /* JWUserActivityViewController.xib */,
 				1826CFAB1FB2DF950058E637 /* JWUserFansViewController.swift */,
 				1826CFAC1FB2DF950058E637 /* JWUserFansViewController.xib */,
 				1826CFAF1FB2DFB30058E637 /* JWUserDynamicViewController.swift */,
@@ -492,7 +492,7 @@
 				18D234D21EBB1C9600BF855D /* JWUserCenterViewController.xib in Resources */,
 				1826CFCE1FB2E03E0058E637 /* JWUserEditViewController.xib in Resources */,
 				1826CFB21FB2DFB30058E637 /* JWUserDynamicViewController.xib in Resources */,
-				1826CFA61FB2DF700058E637 /* JWuserActivityViewController.xib in Resources */,
+				1826CFA61FB2DF700058E637 /* JWUserActivityViewController.xib in Resources */,
 				1826CFA21FB2DF620058E637 /* JWUserTopicViewController.xib in Resources */,
 				1826CFC61FB2E0030058E637 /* JWUserSettingViewController.xib in Resources */,
 				1826CFAE1FB2DF950058E637 /* JWUserFansViewController.xib in Resources */,
@@ -617,7 +617,7 @@
 				1826CFA91FB2DF830058E637 /* JWIntegralShopViewController.swift in Sources */,
 				18D234CC1EBB1C7B00BF855D /* JWTopicViewController.swift in Sources */,
 				1826CFB51FB2DFC30058E637 /* JWUserCollectionViewController.swift in Sources */,
-				1826CFA51FB2DF700058E637 /* JWuserActivityViewController.swift in Sources */,
+				1826CFA51FB2DF700058E637 /* JWUserActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +744,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E6BEC557064CE8B5B69CD7B /* Pods-SwiftDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -763,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C769C33842D5474F8AD24A00 /* Pods-SwiftDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
