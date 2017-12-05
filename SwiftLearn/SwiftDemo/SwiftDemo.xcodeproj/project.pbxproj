@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181F01B01FD62B110025B8D9 /* JWUserFansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F01AF1FD62B110025B8D9 /* JWUserFansModel.swift */; };
+		181F01B21FD62D850025B8D9 /* JWUserFansTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F01B11FD62D850025B8D9 /* JWUserFansTableViewHeader.swift */; };
+		181F01B41FD62D990025B8D9 /* JWUserFansTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F01B31FD62D990025B8D9 /* JWUserFansTableViewHeader.xib */; };
 		1826CF951FB2B2CD0058E637 /* JWNaviBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF941FB2B2CD0058E637 /* JWNaviBarButton.swift */; };
 		1826CF991FB2DD750058E637 /* JWUserIntegralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CF971FB2DD750058E637 /* JWUserIntegralViewController.swift */; };
 		1826CF9A1FB2DD750058E637 /* JWUserIntegralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CF981FB2DD750058E637 /* JWUserIntegralViewController.xib */; };
@@ -36,6 +39,8 @@
 		1826CFCA1FB2E0100058E637 /* JWUserPhoneCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFC81FB2E0100058E637 /* JWUserPhoneCheckViewController.xib */; };
 		1826CFCD1FB2E03E0058E637 /* JWUserEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826CFCB1FB2E03E0058E637 /* JWUserEditViewController.swift */; };
 		1826CFCE1FB2E03E0058E637 /* JWUserEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826CFCC1FB2E03E0058E637 /* JWUserEditViewController.xib */; };
+		18292A061FD62FCE00A97B84 /* JWUserFansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18292A041FD62FCE00A97B84 /* JWUserFansTableViewCell.swift */; };
+		18292A071FD62FCE00A97B84 /* JWUserFansTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18292A051FD62FCE00A97B84 /* JWUserFansTableViewCell.xib */; };
 		184B02CF1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02CE1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift */; };
 		184B02D11FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02D01FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift */; };
 		184B02D31FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B02D21FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift */; };
@@ -84,6 +89,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181F01AF1FD62B110025B8D9 /* JWUserFansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserFansModel.swift; sourceTree = "<group>"; };
+		181F01B11FD62D850025B8D9 /* JWUserFansTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserFansTableViewHeader.swift; sourceTree = "<group>"; };
+		181F01B31FD62D990025B8D9 /* JWUserFansTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserFansTableViewHeader.xib; sourceTree = "<group>"; };
 		1826CF941FB2B2CD0058E637 /* JWNaviBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWNaviBarButton.swift; sourceTree = "<group>"; };
 		1826CF971FB2DD750058E637 /* JWUserIntegralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralViewController.swift; sourceTree = "<group>"; };
 		1826CF981FB2DD750058E637 /* JWUserIntegralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserIntegralViewController.xib; sourceTree = "<group>"; };
@@ -113,6 +121,8 @@
 		1826CFC81FB2E0100058E637 /* JWUserPhoneCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserPhoneCheckViewController.xib; sourceTree = "<group>"; };
 		1826CFCB1FB2E03E0058E637 /* JWUserEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserEditViewController.swift; sourceTree = "<group>"; };
 		1826CFCC1FB2E03E0058E637 /* JWUserEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserEditViewController.xib; sourceTree = "<group>"; };
+		18292A041FD62FCE00A97B84 /* JWUserFansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserFansTableViewCell.swift; sourceTree = "<group>"; };
+		18292A051FD62FCE00A97B84 /* JWUserFansTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWUserFansTableViewCell.xib; sourceTree = "<group>"; };
 		182F15B51FB30879008D56C5 /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		184B02CE1FB41FA5009BB7D4 /* JWUserIntegralTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralTableHeader.swift; sourceTree = "<group>"; };
 		184B02D01FB41FBA009BB7D4 /* JWUserIntegralTableFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWUserIntegralTableFooter.swift; sourceTree = "<group>"; };
@@ -190,6 +200,7 @@
 			children = (
 				184B02DC1FB420AC009BB7D4 /* JWUserIntegralModel.swift */,
 				184B02DE1FB420BB009BB7D4 /* JWUserIntegralDetailModel.swift */,
+				181F01AF1FD62B110025B8D9 /* JWUserFansModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +214,8 @@
 				184B02D51FB4201F009BB7D4 /* JWUserIntegralTableViewCell.xib */,
 				184B02D81FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.swift */,
 				184B02D91FB42079009BB7D4 /* JWUserIntegralDetailTableViewCell.xib */,
+				18292A041FD62FCE00A97B84 /* JWUserFansTableViewCell.swift */,
+				18292A051FD62FCE00A97B84 /* JWUserFansTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -214,6 +227,8 @@
 				184B02E21FB4212C009BB7D4 /* JWUserIntegralTableHeader.xib */,
 				184B02D21FB42007009BB7D4 /* JWUserIntegralDetailTableHeader.swift */,
 				184B02E41FB42144009BB7D4 /* JWUserIntegralDetailTableHeader.xib */,
+				181F01B11FD62D850025B8D9 /* JWUserFansTableViewHeader.swift */,
+				181F01B31FD62D990025B8D9 /* JWUserFansTableViewHeader.xib */,
 			);
 			path = HeaderView;
 			sourceTree = "<group>";
@@ -510,7 +525,9 @@
 				1826CFAA1FB2DF830058E637 /* JWIntegralShopViewController.xib in Resources */,
 				1826CF9E1FB2DF490058E637 /* JWSignInViewController.xib in Resources */,
 				1826CF9A1FB2DD750058E637 /* JWUserIntegralViewController.xib in Resources */,
+				18292A071FD62FCE00A97B84 /* JWUserFansTableViewCell.xib in Resources */,
 				184B02D71FB4201F009BB7D4 /* JWUserIntegralTableViewCell.xib in Resources */,
+				181F01B41FD62D990025B8D9 /* JWUserFansTableViewHeader.xib in Resources */,
 				184B02E51FB42144009BB7D4 /* JWUserIntegralDetailTableHeader.xib in Resources */,
 				18D234BF1EBB12EC00BF855D /* JWHomeCollectionViewCell.xib in Resources */,
 				1826CFCA1FB2E0100058E637 /* JWUserPhoneCheckViewController.xib in Resources */,
@@ -577,7 +594,9 @@
 				1826CFBD1FB2DFE40058E637 /* JWSysNotificationViewController.swift in Sources */,
 				18D234D11EBB1C9600BF855D /* JWUserCenterViewController.swift in Sources */,
 				184B07C81FB158A900B7C016 /* JWFontAdaptor.swift in Sources */,
+				181F01B01FD62B110025B8D9 /* JWUserFansModel.swift in Sources */,
 				184B07D01FB15C7A00B7C016 /* JWTextField.swift in Sources */,
+				18292A061FD62FCE00A97B84 /* JWUserFansTableViewCell.swift in Sources */,
 				18D234BB1EBB0C4C00BF855D /* JWHomeDetailModel.swift in Sources */,
 				18D234AC1EBB003E00BF855D /* JWBasicViewController.swift in Sources */,
 				18D234B91EBB0B8900BF855D /* JWHomeModel.swift in Sources */,
@@ -607,6 +626,7 @@
 				1826CFB91FB2DFCF0058E637 /* JWUserOrderViewController.swift in Sources */,
 				1826CF991FB2DD750058E637 /* JWUserIntegralViewController.swift in Sources */,
 				1826CFC11FB2DFF60058E637 /* JWUserMessageViewController.swift in Sources */,
+				181F01B21FD62D850025B8D9 /* JWUserFansTableViewHeader.swift in Sources */,
 				18D234D61EBB1CBB00BF855D /* JWEntertainmentViewController.swift in Sources */,
 				1826CFAD1FB2DF950058E637 /* JWUserFansViewController.swift in Sources */,
 				18D234AA1EBB002A00BF855D /* JWBasicTabBarViewController.swift in Sources */,

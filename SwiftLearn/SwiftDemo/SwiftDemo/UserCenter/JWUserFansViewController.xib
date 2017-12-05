@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JWUserFansViewController" customModule="SwiftDemo" customModuleProvider="target">
             <connections>
+                <outlet property="fansTableView" destination="amQ-5H-zSJ" id="nD9-ku-3fw"/>
+                <outlet property="friendsTableView" destination="HbF-7r-qZr" id="nZ0-6B-j7y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +20,35 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HbF-7r-qZr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dXL-cx-bq8"/>
+                        <outlet property="delegate" destination="-1" id="JMB-s5-Fbv"/>
+                    </connections>
+                </tableView>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-5H-zSJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ore-X7-cmj"/>
+                        <outlet property="delegate" destination="-1" id="4dg-cU-LcL"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HbF-7r-qZr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Iam-E2-tbI"/>
+                <constraint firstAttribute="trailing" secondItem="HbF-7r-qZr" secondAttribute="trailing" id="Jsh-Aq-QwJ"/>
+                <constraint firstAttribute="bottom" secondItem="HbF-7r-qZr" secondAttribute="bottom" id="PZK-Yj-6ax"/>
+                <constraint firstAttribute="trailing" secondItem="amQ-5H-zSJ" secondAttribute="trailing" id="Usl-bV-aF1"/>
+                <constraint firstItem="amQ-5H-zSJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eJs-Ic-bDX"/>
+                <constraint firstItem="amQ-5H-zSJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jVA-Fr-Q2v"/>
+                <constraint firstItem="HbF-7r-qZr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nn7-n7-2jl"/>
+                <constraint firstAttribute="bottom" secondItem="amQ-5H-zSJ" secondAttribute="bottom" id="zkm-gv-vrs"/>
+            </constraints>
         </view>
     </objects>
 </document>

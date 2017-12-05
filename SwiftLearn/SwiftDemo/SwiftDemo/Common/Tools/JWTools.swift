@@ -8,6 +8,13 @@
 
 import UIKit
 
+//无参无返回值
+typealias funcBlock = () -> () //或者 () -> Void
+//返回值是String
+typealias funcIntBlock = (Int,Int) -> String
+//传参值是String
+typealias funcStringBlock = (String) -> ()
+
 class JWTools: NSObject {
     
     //    MARK: - HUD
